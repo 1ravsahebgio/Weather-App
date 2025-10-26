@@ -1,0 +1,538 @@
+/* Universal Selector  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Inter", "Nunito Sans", sans-serif;
+  text-decoration: none;
+}
+
+/* html Body - Section */
+html,
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gray-light {
+  color: #c4cad3;
+}
+
+/* Parent - Container  */
+.parent-container {
+  background-color: rgb(11, 19, 30);
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fist - Container Cloumn data  */
+#first-container {
+  height: 94.95%;
+  width: 6.5%;
+  background-attachment: rgb(11, 19, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Column - Section  */
+#column-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgb(32, 43, 59);
+}
+
+/* Upper - Div  */
+#upperDiv {
+  height: 12%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#upperDiv #tempImge img {
+  height: 65px;
+  width: 55px;
+}
+
+/* Lower Div  */
+#lowerDiv {
+  height: 55%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Lower Div Child Divs  */
+#lowerDiv div {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #898f99;
+  cursor: pointer;
+}
+
+/* Lower Div I  */
+#lowerDiv i {
+  height: 20px;
+  width: 20px;
+  font-size: 0.9rem;
+}
+
+/* Lower Div P  */
+#lowerDiv p {
+  font-size: 0.86rem;
+  letter-spacing: 1.2px;
+}
+
+/* Lower Div Hover  */
+#lowerDiv div:hover {
+  color: #eeefef;
+}
+
+/* Lower Div Hover On P  */
+#lowerDiv div:hover p {
+  font-weight: 500;
+}
+
+/* Second - Container  */
+#second-container {
+  width: 88%;
+  height: 94.95%;
+  background-color: rgb(11, 19, 30);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Right - Container  */
+#container-left {
+  width: 63%;
+  margin-left: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Input - row Section  */
+#input-row {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(11, 19, 30);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Input Row Section Input  */
+#input-row input {
+  width: 94%;
+  height: 40px;
+  font-size: 0.9rem;
+  padding-left: 10px;
+  background-color: rgb(32, 43, 59);
+  color: white;
+  border: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+/* Input Placeholder  */
+#input-row input::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  letter-spacing: 1.1px;
+}
+
+/* Input Focus  */
+#input-row input:focus {
+  outline: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+/* Input Search  */
+#input-row #search {
+  width: 6%;
+  height: 40px;
+  background-color: rgb(32, 43, 59);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input Search Icon  */
+#input-row #search .fa-solid {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Input Search fa-solid Icon Large */
+#input-row #search .fa-solid:active {
+  font-size: large;
+}
+
+/* AutoFill Section  */
+input:-internal-autofill-selected,
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(32, 43, 59) inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+input:-webkit-autofill::first-line,
+input:autofill::first-line {
+  color: white !important;
+}
+
+/* Left - Container  */
+#container-right {
+  width: 35%;
+  height: 100%;
+  background-color: rgb(32, 43, 59);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+/* Main - Section  */
+#main-section {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 19, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main-section #forecast-section,
+#airConditions-section {
+  background-color: rgb(32, 43, 59);
+}
+
+#main-section .mainContent {
+  height: 32%;
+  width: 100%;
+}
+
+#temprature-section {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#temprature-section .first1 {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 60%;
+  height: 100%;
+}
+
+#temprature-section .first1 #tempDegree,
+#temprature-section .first1 #defaultCity {
+  width: 100%;
+  padding-left: 30px;
+}
+
+#temprature-section #defaultCity div,
+#tempDegree {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+#temprature-section #defaultCity div {
+  color: #dde0e4;
+}
+
+#temprature-section #tempDegree span {
+  color: #f0f1f1;
+}
+
+#temprature-section #defaultCity span {
+  font-size: 0.9rem;
+  color: #9399a2;
+}
+
+#temprature-section #tempContent {
+  width: 30%;
+}
+
+#temprature-section #tempContent img {
+  height: 10rem;
+  width: 10rem;
+}
+
+/* Forecast Section  */
+#forecast-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  padding-top: 12px;
+}
+
+#forecast-section #today-for {
+  color: #d8dde5;
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#forecast-section #showForecast {
+  height: 100%;
+  color: #d8dde5;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#showForecast div {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border-right: #35455e solid 1.5px;  */
+}
+
+.rightB {
+  width: 1px;
+  height: 90%;
+  opacity: 1;
+  background-color: rgb(53, 69, 94);
+  border-radius: 2px;
+  margin: 0px 20px;
+}
+
+#sixAm img,
+#nineAm img,
+#twelvePm img,
+#threePm img,
+#sixPm img,
+#ninePm img {
+  width: 50px;
+  height: 50px;
+}
+
+#showForecast div h2 {
+  padding-top: 2.5px !important;
+}
+
+#showForecast #ninePm {
+  border: none !important;
+}
+
+#forecast-section #today-for p {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Air Condition - Section  */
+#airConditions-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+}
+
+#airConditions-section #airCon {
+  width: 90%;
+  min-height: 20%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#airCon p {
+  color: #9399a2;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+#airCon #seeBtn {
+  font-size: 0.75rem;
+  background-color: #44a3ff;
+  color: #d8e3f4;
+  border: none;
+  cursor: pointer;
+  padding: 3px 6px;
+  border-radius: 10px;
+}
+
+#airCon #seeBtn:active {
+  background-color: #2793ff;
+}
+
+#airConditions-section #conditionsData {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+#conditionsData .data-index {
+  height: 40%;
+  width: 40%;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+#airConditions-section #wind,
+#airConditions-section #uvIndex {
+  padding-left: 30px;
+}
+
+#conditionsData .data-index i {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#conditionsData .solid-icons {
+  margin-bottom: 27px;
+}
+
+#conditionsData .data-index p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.data-index i,
+.data-index p {
+  color: #9399a2;
+}
+
+#conditionsData .data-index h1 {
+  font-size: 1.6rem;
+  color: #c4cad3;
+}
+
+/* Right Container  */
+#container-right #weekly-forecast {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#wf-heading {
+  width: 85%;
+  color: #9399a2;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+#showWeeklyFor {
+  width: 85%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6%;
+  justify-content: center;
+  align-items: center;
+}
+
+.foreCard { 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dayN {
+  color: #9399a2;
+  font-size: 0.8rem;
+  font-size: 500;
+}
+
+.imgSpan { 
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgSpan span {
+  color: #c4cad3;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.containtDiv {  
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.max-temp {
+  font-size: 0.9rem;
+  color: #c4cad3;
+  font-weight: 600;
+}
+
+.min-temp {
+  color: #9399a2;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.slash {
+  color: #9399a2;
+  margin: 0 -2px;
+  font-weight: 600;
+}
+
+.bottomB {
+  width: 100%;
+  height: 1px;
+  opacity: 1;
+  background-color: rgb(53, 69, 94);
+  border-radius: 2px;
+}
