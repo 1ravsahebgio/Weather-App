@@ -170,7 +170,7 @@ export async function getWeather(cityName) {
 
   try {
     // --- WeatherAPI --- (Primary)
-    const weatherApiKey = "12573cac8d6d4d80807112306251310";
+    const weatherApiKey = "52a727de55f349348b585832252710";
     const currentUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${cityName}&aqi=yes`;
     const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=${cityName}&days=7&aqi=yes`;
 
@@ -282,4 +282,5 @@ export async function getWeather(cityName) {
 // --- Default weather function ---
 export async function defaultWeather() {
   await getWeather("Mumbai");
+
 }
