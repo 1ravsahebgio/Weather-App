@@ -1,218 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <!-- Font Aswome cdnjs  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffc125" />
 
-    <link rel="stylesheet" href="air.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <!-- Font Aswome cdnjs  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
 
-  <body>
-    <div class="parent-container">
-      <div id="first-container">
-        <div id="column-section">
-          <div id="upperDiv">
-            <div id="tempImge">
-              <img
-                src="https://assets.api.uizard.io/api/cdn/stream/d0bb0968-406e-4014-b9ab-080788e9d44b.png"
-                alt="TempUmbrella"
-              />
-            </div>
-          </div>
-          <div id="lowerDiv" class="gray-light">
-            <div id="weatherImge" title="Weather">
-              <i class="fas fa-cloud-sun-rain"></i>
-              <p>Weather</p>
-            </div>
-            <div id="citiesImge" title="Cities">
-              <i class="fa-solid fa-list-ul">‌</i>
-              <p>Cities</p>
-            </div>
-            <div id="mapImge" title="Map">
-              <i class="fa-solid fa-map-location-dot"></i>
-              <p>Map</p>
-            </div>
-            <div id="settingImge" title="Setting">
-              <i class="fa-solid fa-sliders"></i>
-              <p>Settings</p>
-            </div>
+<body>
+  <div class="parent-container flex-center">
+    <div id="first-container" class="flex-center">
+      <div id="column-section" class="flex-center flex-col secondary-bg">
+        <div id="upperDiv" class="flex-center hidden">
+          <div id="tempImge">
+            <img src="https://assets.api.uizard.io/api/cdn/stream/d0bb0968-406e-4014-b9ab-080788e9d44b.png"
+              alt="TempUmbrella" />
           </div>
         </div>
-      </div>
-
-      <div id="second-container">
-        <div id="container-left">
-          <div id="input-row">
-            <input
-              type="text"
-              placeholder="Search for cities"
-              title="Search for cities"
-              id="inputData"
-              required
-              spellcheck="false"
-            />
-            <div id="search" title="Search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+        <div id="lowerDiv" class="gray-light flex-center flex-col">
+          <div id="weatherImge" title="Weather" class="flex-col">
+            <i class="fas fa-cloud-sun-rain"></i>
+            <p>Weather</p>
           </div>
-
-          <div id="main-section">
-            <div id="temprature-section" class="mainContent">
-              <div class="first1">
-                <div id="defaultCity">
-                  <div id="DefaultCityName"></div>
-                  <span id="cRain"></span>
-                </div>
-                <div id="tempDegree">
-                  <p><span id="degree"></span></p>
-                </div>
-              </div>
-              <div id="tempContent">
-                <img
-                  src="https://assets.api.uizard.io/api/cdn/stream/e555eccb-fbe4-4a3c-8917-933a41798140.png"
-                  alt="Content"
-                />
-              </div>
-            </div>
-
-            <div id="forecast-section" class="mainContent">
-              <div id="today-for">
-                <p>TODAY'S FORECAST</p>
-              </div>
-              <div id="showForecast">
-                <div id="sixAm">
-                  <p>6:00 AM</p>
-                  <img
-                    src="https://openweathermap.org/img/wn/04d.png"
-                    alt="img"
-                  />
-                  <h2></h2>
-                </div>
-                <div class="rightB"></div>
-                <div id="nineAm">
-                  <p>9:00 AM</p>
-                  <img
-                    src="https://openweathermap.org/img/wn/02d.png"
-                    alt="img"
-                  />
-                  <h2></h2>
-                </div>
-                <div class="rightB"></div>
-                <div id="twelvePm">
-                  <p>12:00 PM</p>
-                  <img
-                    src="https://openweathermap.org/img/wn/01d.png"
-                    alt="img"
-                  />
-                  <h2></h2>
-                </div>
-                <div class="rightB"></div>
-                <div id="threePm">
-                  <p>3:00 PM</p>
-                  <img
-                    src="https://openweathermap.org/img/wn/01d.png"
-                    alt="img"
-                  />
-                  <h2></h2>
-                </div>
-                <div class="rightB"></div>
-                <div id="sixPm">
-                  <p>6:00 PM</p>
-                  <img
-                    src="https://openweathermap.org/img/wn/02n.png"
-                    alt="img"
-                  />
-                  <h2></h2>
-                </div>
-                <div class="rightB"></div>
-                <div id="ninePm">
-                  <p>9:00 PM</p>
-                  <img
-                    src="https://openweathermap.org/img/wn/02d.png"
-                    alt="img"
-                  />
-                  <h2></h2>
-                </div>
-              </div>
-            </div>
-
-            <div id="airConditions-section" class="mainContent">
-              <div id="airCon">
-                <p>AIR CONDITIONS</p>
-                <a href="#">
-                  <div id="seeBtn">See more</div>
-                </a>
-              </div>
-
-              <div id="conditionsData">
-                <div id="realFeel" class="data-index">
-                  <div id="tempSym" class="solid-icons">
-                    <i class="fa-solid fa-temperature-half">‌</i>
-                  </div>
-
-                  <div id="tempShow">
-                    <p>Real Feel</p>
-                    <h1 id="realFeels">0&deg;</h1>
-                  </div>
-                </div>
-
-                <div id="wind" class="data-index">
-                  <div id="windSym" class="solid-icons">
-                    <i class="fa-solid fa-wind">‌</i>
-                  </div>
-                  <div id="windShow">
-                    <p>Wind</p>
-                    <h1 id="windSpeed">0 km/h</h1>
-                  </div>
-                </div>
-                <div id="rainChance" class="data-index">
-                  <div id="chanceOfRain" class="solid-icons">
-                    <i class="fa-solid fa-droplet">‌</i>
-                  </div>
-                  <div id="rainShow">
-                    <p>Chance of rain</p>
-                    <h1 id="chanceRain">0%</h1>
-                  </div>
-                </div>
-                <div id="uvIndex" class="data-index">
-                  <div id="uV" class="solid-icons">
-                    <i class="fa-solid fa-sun">‌</i>
-                  </div>
-                  <div id="uvIndexShow">
-                    <p>UV Index</p>
-                    <h1 id="uVIndex">0</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div id="citiesImge" title="Cities" class="flex-col">
+            <i class="fa-solid fa-list-ul">‌</i>
+            <p>Cities</p>
           </div>
-        </div>
-
-        <div id="container-right">
-          <div id="weekly-forecast">
-            <div id="wf-heading">
-              <p>7-DAY FORECAST</p>
-            </div>
-            <div id="showWeeklyFor"> 
-            </div>
+          <div id="mapImge" title="Map" class="flex-col">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Map</p>
+          </div>
+          <div id="settingImge" title="Setting" class="flex-col">
+            <i class="fa-solid fa-sliders"></i>
+            <p>Settings</p>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="script.js" type="module"></script>
-  </body>
+    <div id="second-container" class="flex-center flex-betw">
+      <div id="container-left" class="flex-center flex-col flex-betw">
+        <div id="input-row" class="flex-center">
+          <input type="text" class="secondary-bg" placeholder="Search for cities" title="Search for cities"
+            id="inputData" spellcheck="false" required />
+          <div id="search" class="flex-center secondary-bg" title="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div id="main-section" class="flex-center flex-col">
+
+          <div id="temprature-section" class="mainContent flex-center flex-betw">
+            <div class="first1 flex-center flex-col">
+              <div id="defaultCity">
+                <div id="DefaultCityName"></div>
+                <span id="cRain" class="cool-gray"></span>
+              </div>
+              <div id="tempDegree">
+                <p><span id="degree"></span></p>
+              </div>
+            </div>
+            <div id="tempContent">
+              <img src="https://assets.api.uizard.io/api/cdn/stream/e555eccb-fbe4-4a3c-8917-933a41798140.png"
+                alt="Content" />
+            </div>
+          </div>
+
+          <div id="forecast-section" class="mainContent flex-center flex-col secondary-bg">
+            <div id="today-for" class="flex-center">
+              <p>TODAY'S FORECAST</p>
+            </div>
+            <div id="showForecast" class="flex-center">
+              <div id="sixAm" class="wrapper">
+                <p>6:00 AM</p>
+                <img src="https://openweathermap.org/img/wn/04d.png" alt="img" />
+                <h2></h2>
+              </div>
+              <div class="rightB"></div>
+              <div id="nineAm" class="wrapper">
+                <p>9:00 AM</p>
+                <img src="https://openweathermap.org/img/wn/02d.png" alt="img" />
+                <h2></h2>
+              </div>
+              <div class="rightB"></div>
+              <div id="twelvePm" class="wrapper">
+                <p>12:00 PM</p>
+                <img src="https://openweathermap.org/img/wn/01d.png" alt="img" />
+                <h2></h2>
+              </div>
+              <div class="rightB dis-none"></div>
+              <div id="threePm" class="wrapper margin-t">
+                <p>3:00 PM</p>
+                <img src="https://openweathermap.org/img/wn/01d.png" alt="img" />
+                <h2></h2>
+              </div>
+              <div class="rightB margin-t"></div>
+              <div id="sixPm" class="wrapper margin-t">
+                <p>6:00 PM</p>
+                <img src="https://openweathermap.org/img/wn/02n.png" alt="img" />
+                <h2></h2>
+              </div>
+              <div class="rightB margin-t"></div>
+              <div id="ninePm" class="wrapper margin-t">
+                <p>9:00 PM</p>
+                <img src="https://openweathermap.org/img/wn/02d.png" alt="img" />
+                <h2></h2>
+              </div>
+            </div>
+          </div>
+
+          <div id="airConditions-section" class="mainContent flex-center flex-col flex-betw secondary-bg">
+            <div id="airCon" class="flex-center flex-betw">
+              <p class="cool-gray">AIR CONDITIONS</p>
+              <a href="#">
+                <div id="seeBtn">See more</div>
+              </a>
+            </div>
+
+            <div id="conditionsData" class="flex-center">
+              
+              <div id="realFeel" class="data-index">
+                <div id="tempSym" class="solid-icons">
+                  <i class="fa-solid fa-temperature-half cool-gray">‌</i>
+                </div>
+
+                <div id="tempShow">
+                  <p class="cool-gray">Real Feel</p>
+                  <h1 id="realFeels" class="gray-light">0&deg;</h1>
+                </div>
+              </div>
+
+              <div id="wind" class="data-index">
+                <div id="windSym" class="solid-icons">
+                  <i class="fa-solid fa-wind cool-gray">‌</i>
+                </div>
+                <div id="windShow">
+                  <p class="cool-gray">Wind</p>
+                  <h1 id="windSpeed" class="gray-light">0 km/h</h1>
+                </div>
+              </div>
+              <div id="rainChance" class="data-index">
+                <div id="chanceOfRain" class="solid-icons">
+                  <i class="fa-solid fa-droplet cool-gray">‌</i>
+                </div>
+                <div id="rainShow">
+                  <p class="cool-gray">Chance of rain</p>
+                  <h1 id="chanceRain" class="gray-light">0%</h1>
+                </div>
+              </div>
+              <div id="uvIndex" class="data-index">
+                <div id="uV" class="solid-icons">
+                  <i class="fa-solid fa-sun cool-gray">‌</i>
+                </div>
+                <div id="uvIndexShow">
+                  <p class="cool-gray">UV Index</p>
+                  <h1 id="uVIndex" class="gray-light">0</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="container-right" class="secondary-bg">
+        <div id="weekly-forecast" class="flex-center flex-col">
+          <div id="wf-heading" class="cool-gray">
+            <p>7-DAY FORECAST</p>
+          </div>
+          <div id="showWeeklyFor" class="flex-center flex-col"></div>
+             <div id="um-img">
+            <img src="https://assets.api.uizard.io/api/cdn/stream/d0bb0968-406e-4014-b9ab-080788e9d44b.png"
+              alt="TempUmbrella" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+
 </html>

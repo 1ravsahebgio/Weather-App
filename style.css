@@ -10,58 +10,71 @@
 /* html Body - Section */
 html,
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 100%;
   width: 100%;
+}
+
+/* Display Flex  */
+body,
+#lowerDiv div,
+#showForecast div,
+#conditionsData .data-index,
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Flex Colounm */
+.flex-col {
+  flex-direction: column;
+}
+/* Flex Between  */
+.flex-betw {
+  justify-content: space-between;
+}
+
+/* Color  */
+/* Gray Light  */
 .gray-light {
   color: #c4cad3;
 }
 
+.cool-gray {
+  color: #9399a2;
+}
+
+/* secondary-bg */
+.secondary-bg {
+  background-color: rgb(32, 43, 59);
+}
 /* Parent - Container  */
 .parent-container {
   background-color: rgb(11, 19, 30);
-  width: 95%;
+  width: 90%;
   height: 100vh;
-  display: flex;
   gap: 15px;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Fist - Container Cloumn data  */
 #first-container {
   height: 94.95%;
   width: 6.5%;
-  background-attachment: rgb(11, 19, 30);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Column - Section  */
 #column-section {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: start;
-  align-items: center;
   border-radius: 15px;
-  background-color: rgb(32, 43, 59);
 }
 
 /* Upper - Div  */
 #upperDiv {
   height: 12%;
   width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #upperDiv #tempImge img {
@@ -73,19 +86,12 @@ body {
 #lowerDiv {
   height: 55%;
   width: 70%;
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 /* Lower Div Child Divs  */
 #lowerDiv div {
-  display: flex;
   gap: 5px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: #898f99;
   cursor: pointer;
 }
@@ -117,10 +123,6 @@ body {
 #second-container {
   width: 88%;
   height: 94.95%;
-  background-color: rgb(11, 19, 30);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 /* Right - Container  */
@@ -128,20 +130,13 @@ body {
   width: 63%;
   margin-left: 5px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* Input - row Section  */
 #input-row {
   width: 100%;
   height: 40px;
-  background-color: rgb(11, 19, 30);
-  display: flex;
   justify-content: start;
-  align-items: center;
 }
 
 /* Input Row Section Input  */
@@ -150,7 +145,6 @@ body {
   height: 40px;
   font-size: 0.9rem;
   padding-left: 10px;
-  background-color: rgb(32, 43, 59);
   color: white;
   border: none;
   border-top-left-radius: 12px;
@@ -177,13 +171,9 @@ input:focus-visible {
 #input-row #search {
   width: 6%;
   height: 40px;
-  background-color: rgb(32, 43, 59);
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Input Search Icon  */
@@ -215,28 +205,14 @@ input:autofill::first-line {
 #container-right {
   width: 35%;
   height: 100%;
-  background-color: rgb(32, 43, 59);
   border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
 }
 
 /* Main - Section  */
 #main-section {
   width: 100%;
   height: 100%;
-  background-color: rgb(11, 19, 30);
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-}
-
-#main-section #forecast-section,
-#airConditions-section {
-  background-color: rgb(32, 43, 59);
 }
 
 #main-section .mainContent {
@@ -246,16 +222,10 @@ input:autofill::first-line {
 
 #temprature-section {
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #temprature-section .first1 {
-  display: flex;
   gap: 30px;
-  flex-direction: column;
-  justify-content: center;
   align-items: start;
   width: 60%;
   height: 100%;
@@ -284,7 +254,6 @@ input:autofill::first-line {
 
 #temprature-section #defaultCity span {
   font-size: 0.9rem;
-  color: #9399a2;
 }
 
 #temprature-section #tempContent {
@@ -298,9 +267,6 @@ input:autofill::first-line {
 
 /* Forecast Section  */
 #forecast-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-radius: 25px;
   padding-bottom: 10px;
   padding-top: 12px;
@@ -309,28 +275,18 @@ input:autofill::first-line {
 #forecast-section #today-for {
   color: #d8dde5;
   width: 90%;
-  display: flex;
   justify-content: start;
-  align-items: center;
   margin-bottom: 15px;
 }
 
 #forecast-section #showForecast {
   height: 100%;
   color: #d8dde5;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #showForecast div {
   margin-top: -10px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* border-right: #35455e solid 1.5px;  */
 }
 
 .rightB {
@@ -367,10 +323,6 @@ input:autofill::first-line {
 
 /* Air Condition - Section  */
 #airConditions-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 25px;
 }
 
@@ -378,13 +330,9 @@ input:autofill::first-line {
   width: 90%;
   min-height: 20%;
   margin-top: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #airCon p {
-  color: #9399a2;
   font-size: 0.7rem;
   font-weight: 700;
 }
@@ -406,19 +354,15 @@ input:autofill::first-line {
 #airConditions-section #conditionsData {
   width: 90%;
   height: 90%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  align-items: center;
 }
 
 #conditionsData .data-index {
   height: 40%;
   width: 40%;
-  display: flex;
   gap: 10px;
   justify-content: start;
-  align-items: center;
 }
 
 #airConditions-section #wind,
@@ -440,99 +384,73 @@ input:autofill::first-line {
   font-weight: 500;
 }
 
-.data-index i,
-.data-index p {
-  color: #9399a2;
-}
-
 #conditionsData .data-index h1 {
   font-size: 1.6rem;
-  color: #c4cad3;
 }
 
 /* Right Container  */
 #container-right #weekly-forecast {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: start;
-  align-items: center;
 }
 
-#wf-heading {
+#container-right #wf-heading {
   width: 85%;
-  color: #9399a2;
   font-size: 0.8rem;
   font-weight: 600;
   padding-top: 20px;
 }
 
-#showWeeklyFor {
+#weekly-forecast #showWeeklyFor {
   width: 85%;
   height: 95%;
-  display: flex;
-  flex-direction: column;
   gap: 1.6%;
-  justify-content: center;
-  align-items: center;
 }
 
-.foreCard { 
+#showWeeklyFor .foreCard {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.dayN {
-  color: #9399a2;
+#showWeeklyFor .dayN {
   font-size: 0.8rem;
   font-size: 500;
 }
 
-.imgSpan { 
+#showWeeklyFor .imgSpan {
   width: 45%;
-  display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
-.imgSpan span {
-  color: #c4cad3;
+#showWeeklyFor .imgSpan span {
   font-size: 0.8rem;
   font-weight: 600;
 }
 
-.containtDiv {  
+#showWeeklyFor .containtDiv {
   width: 40%;
-  display: flex;
   justify-content: end;
-  align-items: center;
 }
 
-.max-temp {
-  font-size: 0.9rem;
-  color: #c4cad3;
+#showWeeklyFor .min-max {
   font-weight: 600;
 }
 
-.min-temp {
-  color: #9399a2;
-  font-weight: 600;
+#showWeeklyFor .max-temp,
+#showWeeklyFor .min-temp {
   font-size: 0.9rem;
 }
 
-.slash {
-  color: #9399a2;
+#showWeeklyFor .slash {
   margin: 0 -2px;
-  font-weight: 600;
 }
 
-.bottomB {
+#showWeeklyFor .bottomB {
   width: 100%;
   height: 1px;
   opacity: 1;
   background-color: rgb(53, 69, 94);
   border-radius: 2px;
 }
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */

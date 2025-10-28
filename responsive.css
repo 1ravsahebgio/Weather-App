@@ -1,0 +1,237 @@
+/* Mobile ke liye (max-width 600px) */
+@media (max-width: 600px) {
+  html,
+  body {
+    height: auto !important;
+  }
+
+  .parent-container {
+    width: 100% !important;
+    height: auto !important;
+    padding-top: 10px;
+  }
+
+  #first-container {
+    background-color: aliceblue;
+    width: 100% !important;
+    height: 7% !important;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  #column-section {
+    justify-content: center !important  ;
+  }
+
+  #lowerDiv i {
+    font-size: 1.1rem !important;
+  }
+
+  #lowerDiv {
+    justify-content: space-evenly;
+  }
+  .hidden {
+    display: none !important;
+  }
+
+  #container-left {
+    margin: 0% !important;
+  }
+
+  #temprature-section .first1 #tempDegree,
+  #temprature-section .first1 #defaultCity {
+    padding-left: 0px !important;
+  }
+
+  #input-row {
+    width: 100%;
+  }
+
+  #input-row input {
+    font-size: 1rem;
+    padding-left: 15px;
+  }
+
+  #search .fa-solid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-right: 10px;
+  }
+
+  #search {
+    width: 10% !important;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  #column-section {
+    border-radius: 0% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  #upperDiv {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  #lowerDiv {
+    width: calc(100% - 10%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  #lowerDiv div {
+    flex-direction: row !important;
+  }
+
+  #lowerDiv p {
+    display: none;
+  }
+
+  #second-container {
+    flex-direction: column !important;
+  }
+
+  #container-left {
+    width: 100% !important;
+  }
+
+  #main-section {
+    margin-top: 10px;
+    width: 100% !important;
+  }
+
+  #forecast-section,
+  #airConditions-section,
+  #container-right {
+    margin-top: 20px;
+  }
+
+  .first1 {
+    width: 80% !important;
+    padding-left: 15px;
+  }
+
+  #DefaultCityName {
+    margin-bottom: 5px !important;
+  }
+
+  #tempDegree {
+    margin-top: -10px;
+  }
+
+  #temprature-section {
+    justify-content: space-evenly;
+  }
+
+  #tempContent img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  #forecast-section {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 5% !important;
+    padding: 20px 5px !important;
+  }
+
+  #showForecast {
+    /* background-color: green; */
+    width: 100% !important;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  #showForecast .wrapper {
+    width: 25%;
+  }
+
+  #showForecast .rightB {
+    height: auto !important;
+    padding: 40px 0px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  #showForecast .margin-t {
+    margin-top: 20px !important;
+  }
+
+  #showForecast .dis-none {
+    display: none;
+  }
+
+  #airConditions-section {
+    width: 100%;
+    border-radius: 5% !important;
+  }
+
+  #conditionsData {
+    width: 100%;
+    justify-content: space-between !important;
+    padding: 0 !important;
+    padding-top: 20px !important;
+  }
+
+  .data-index {
+    width: 45% !important;
+  }
+
+  .data-index h1 {
+    font-size: 1.5rem !important;
+  }
+
+  #airConditions-section #wind,
+  #airConditions-section #uvIndex {
+    padding-left: 0px !important;
+  }
+
+  #rainChance,
+  #uvIndex {
+    padding-top: 20px;
+  }
+
+  #container-right {
+    width: 100%;
+    /* background-color: rgb(0, 255, 0); */
+    border-radius: 5% !important;
+    /* padding-bottom: 50px; */
+    margin-bottom: 100px !important;
+  }
+
+  #forecast-section #today-for {
+    padding-top: 10px;
+  }
+
+  #airConditions-section {
+    padding: 25px 0px !important;
+  }
+
+  #container-right {
+    padding: 25px 0px 0px 0px;
+  }
+
+  #um-img img {
+    height: 150px;
+    width: 100px;
+  }
+}

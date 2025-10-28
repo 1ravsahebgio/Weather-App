@@ -57,20 +57,19 @@ export async function getWeather(cityName) {
         const max = Math.floor(dayData.day.maxtemp_c);
         const min = Math.floor(dayData.day.mintemp_c);
 
-        console.log(condition);
         container.innerHTML += `
-        <div class="foreCard">
-          <span class="dayN">${dayName}</span>
-          <div class="imgSpan">
+        <div class="foreCard flex-center flex-betw">
+          <span class="dayN cool-gray">${dayName}</span>
+          <div class="imgSpan flex-center">
             <img src="${icon}" alt="${condition}" width="50px" height="50px">
-           <div class="containtDiv">
-           <span>${condition}</span>
+           <div class="containtDiv flex-center">
+           <span class="gray-light">${condition}</span>
            </div>
           </div>
           <div class="minMax">
-            <span class="max-temp">${max}</span>
-            <span class="slash">/</span>
-            <span class="min-temp">${min}</span>
+            <span class="max-temp gray-light">${max}</span>
+            <span class="slash cool-gray">/</span>
+            <span class="min-temp cool-gray">${min}</span>
           </div>
         </div>
         <div class="bottomB"></div>
@@ -122,39 +121,38 @@ export async function getWeather(cityName) {
 
           const condition = shortCondition(mostCommonCondition);
           const iconCode = dayData.icons[0]; // Use first icon of the day
-          const icon = `https://openweathermap.org/img/wn/${iconCode}@2x.png`; 
+          const icon = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
           container.innerHTML += `
-          <div class="foreCard">
-            <span class="dayN">${dayName}</span>
-            <div class="imgSpan">
-              <img src="${icon}" alt="${condition}" width="50px" height="50px">
-             <div class="containtDiv">
-            <span>${condition}</span>
-             </div>
-            </div>
+         <div class="foreCard flex-center flex-betw">
+          <span class="dayN cool-gray">${dayName}</span>
+          <div class="imgSpan flex-center">
+            <img src="${icon}" alt="${condition}" width="50px" height="50px">
+           <div class="containtDiv flex-center">
+           <span class="gray-light">${condition}</span>
+           </div>
+          </div>
             <div class="minMax">
-              <span class="max-temp">${maxTemp}</span>
-              <span class="slash">/</span>
-              <span class="min-temp">${minTemp}</span>
+              <span class="max-temp gray-light">${maxTemp}</span>
+              <span class="slash cool-gray">/</span>
+              <span class="cool-gray min-temp">${minTemp}</span>
             </div>
           </div>
           <div class="bottomB"></div>
         `;
-        } else {
-          // If no data for future date (beyond 5 days), show estimated data
-          const estimatedTemp = 25 + (i * 2); // Simple estimation
+        } else { 
+          const estimatedTemp = 25 + (i * 2); 
           container.innerHTML += `
-          <div class="foreCard">
-            <span class="dayN">${dayName}</span>
-            <div class="imgSpan">
+            <div class="foreCard flex-center flex-betw">
+             <span class="dayN cool-gray">${dayName}</span>
+           <div class="imgSpan flex-center">
               <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Estimated" width="50px" height="50px">
-              <span>Sunny</span>
+              <span class="gray-light">Sunny</span>
             </div>
             <div class="minMax">
-              <span class="max-temp">${estimatedTemp}</span>
-              <span class="slash">/</span>
-              <span class="min-temp">${estimatedTemp - 5}</span>
+              <span class="max-temp gray-light">${estimatedTemp}</span>
+              <span class="slash cool-gray">/</span>
+              <span class="cool-gray min-temp">${estimatedTemp - 5}</span>
             </div>
           </div>
           <div class="bottomB"></div>
@@ -169,8 +167,8 @@ export async function getWeather(cityName) {
   degree.innerText = "⏳";
 
   try {
-    // --- WeatherAPI --- (Primary)
-    const weatherApiKey = "12573cac8d6d4d80807112306251310";
+    // --- WeatherAPI --- (Primary) 
+    const weatherApiKey = "52a727de55f349348b585832252710";
     const currentUrl = `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${cityName}&aqi=yes`;
     const forecastUrl = `https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=${cityName}&days=7&aqi=yes`;
 
@@ -180,6 +178,7 @@ export async function getWeather(cityName) {
 
     const data = await currentRes.json();
     const forecastData = await forecastRes.json();
+console.log(forecastData.forecast.forecastday.length);
 
     // Update UI with WeatherAPI data
     updateBasicInfo(data.location.name, data.current.temp_c, forecastData.forecast.forecastday[0].day.daily_chance_of_rain);
