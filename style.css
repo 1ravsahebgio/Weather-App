@@ -25,7 +25,9 @@ body,
   justify-content: center;
   align-items: center;
 }
-
+#um-img {
+  display: none;
+}
 /* Flex Colounm */
 .flex-col {
   flex-direction: column;

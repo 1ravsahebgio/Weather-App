@@ -6,36 +6,56 @@
   }
 
   .parent-container {
-    width: 100% !important;
     height: auto !important;
     padding-top: 10px;
   }
 
-  #first-container {
-    background-color: aliceblue;
+  .parent-container,
+  #first-container,
+  #input-row,
+  #search .fa-solid,
+  #container-left,
+  #main-section,
+  #forecast-section,
+  #showForecast,
+  #airConditions-section,
+  #conditionsData,
+  #container-right {
     width: 100% !important;
+  }
+
+  /* Flex Direction  */
+  #first-container,
+  #column-section,
+  #lowerDiv {
+    flex-direction: row !important;
+  }
+
+  #forecast-section,
+  #airConditions-section,
+  #container-right {
+    margin-top: 20px;
+  }
+
+  #first-container {
     height: 7% !important;
     position: fixed;
     bottom: 0px;
     left: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row !important;
   }
 
   #column-section {
-    justify-content: center !important  ;
+    justify-content: center !important;
+    /* alrady hai check */
   }
 
   #lowerDiv i {
     font-size: 1.1rem !important;
   }
 
-  #lowerDiv {
-    justify-content: space-evenly;
-  }
-  .hidden {
+  .hidden,
+  #lowerDiv p,
+  #showForecast .dis-none {
     display: none !important;
   }
 
@@ -49,7 +69,7 @@
   }
 
   #input-row {
-    width: 100%;
+    margin-top: 5px;
   }
 
   #input-row input {
@@ -57,72 +77,27 @@
     padding-left: 15px;
   }
 
-  #search .fa-solid {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-right: 10px;
-  }
-
   #search {
     width: 10% !important;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
   }
 
   #column-section {
     border-radius: 0% !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row !important;
-  }
-
-  #upperDiv {
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row !important;
   }
 
   #lowerDiv {
     width: calc(100% - 10%);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row !important;
-  }
-
-  #lowerDiv div {
-    flex-direction: row !important;
-  }
-
-  #lowerDiv p {
-    display: none;
   }
 
   #second-container {
-    flex-direction: column !important;
-  }
-
-  #container-left {
-    width: 100% !important;
+    flex-wrap: wrap;
   }
 
   #main-section {
     margin-top: 10px;
-    width: 100% !important;
   }
 
-  #forecast-section,
-  #airConditions-section,
-  #container-right {
-    margin-top: 20px;
-  }
-
-  .first1 {
+  #main-section .first1 {
     width: 80% !important;
     padding-left: 15px;
   }
@@ -135,36 +110,32 @@
     margin-top: -10px;
   }
 
-  #temprature-section {
-    justify-content: space-evenly;
+  #tempContent {
+    margin-bottom: 20px;
   }
 
   #tempContent img {
-    width: 100px !important;
-    height: 100px !important;
+    width: 90px !important;
+    height: 90px !important; 
   }
 
   #forecast-section {
-    width: 100% !important;
     height: auto !important;
     border-radius: 5% !important;
-    padding: 20px 5px !important;
+    padding: 15px 0px 20px 0px !important;
   }
 
   #showForecast {
-    /* background-color: green; */
-    width: 100% !important;
     height: auto;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row !important;
+    padding-top: 20px;
   }
 
   #showForecast .wrapper {
     width: 25%;
   }
 
+  /* Border in Forecast section */
   #showForecast .rightB {
     height: auto !important;
     padding: 40px 0px;
@@ -172,21 +143,28 @@
     margin-right: 10px !important;
   }
 
+  /* wrapper margin */
   #showForecast .margin-t {
     margin-top: 20px !important;
   }
 
-  #showForecast .dis-none {
-    display: none;
+  #airConditions-section {
+    border-radius: 5% !important;
+    padding: 20px 5px 25px 15px !important;
   }
 
-  #airConditions-section {
-    width: 100%;
-    border-radius: 5% !important;
+  #airConditions-section #airCon {
+    width: 100% !important;
+    height: auto;
+    margin-top: -5px !important;
+  }
+
+  #airCon a {
+    padding-right: 20px !important;
   }
 
   #conditionsData {
-    width: 100%;
+    width: 100% !important;
     justify-content: space-between !important;
     padding: 0 !important;
     padding-top: 20px !important;
@@ -197,7 +175,12 @@
   }
 
   .data-index h1 {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
+  }
+
+  #rainChance,
+  #uvIndex {
+    padding-top: 30px;
   }
 
   #airConditions-section #wind,
@@ -205,33 +188,31 @@
     padding-left: 0px !important;
   }
 
-  #rainChance,
-  #uvIndex {
-    padding-top: 20px;
-  }
-
+  /* Right Container Data */
   #container-right {
-    width: 100%;
-    /* background-color: rgb(0, 255, 0); */
     border-radius: 5% !important;
-    /* padding-bottom: 50px; */
-    margin-bottom: 100px !important;
+    margin-bottom: 80px !important;
+    padding-bottom:  20px;
   }
 
-  #forecast-section #today-for {
-    padding-top: 10px;
+  #weekly-forecast .dayN{  
+    width: 50px;
   }
-
-  #airConditions-section {
-    padding: 25px 0px !important;
+  #container-right #showWeeklyFor{ 
+    padding-top: 20px !important;
   }
-
-  #container-right {
-    padding: 25px 0px 0px 0px;
+  #showWeeklyFor .imgSpan{ 
+    justify-content: center;
+    gap: 15px;
   }
-
+  #um-img {
+    display: block;
+    margin-bottom: -20px;
+  }
+  
   #um-img img {
-    height: 150px;
-    width: 100px;
+    height: 100px;
+    width: 70px;
   }
 }
+/* ///////////////////////////////////////////////////////////////////////////////////// */

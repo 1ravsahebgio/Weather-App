@@ -1,6 +1,7 @@
 // weather.js
 export async function getWeather(cityName) {
   // Temprature Section 
+  const tempIcon = document.getElementById("tempIcon");
   const cRain = document.getElementById("cRain");
   const degree = document.getElementById("degree");
   const city = document.getElementById("DefaultCityName");
@@ -46,6 +47,7 @@ export async function getWeather(cityName) {
 
 
     if (source === "weatherapi") {
+
       // WeatherAPI format - 7 days directly
       forecastData.forEach((dayData, i) => {
         const date = new Date();
@@ -140,8 +142,8 @@ export async function getWeather(cityName) {
           </div>
           <div class="bottomB"></div>
         `;
-        } else { 
-          const estimatedTemp = 25 + (i * 2); 
+        } else {
+          const estimatedTemp = 25 + (i * 2);
           container.innerHTML += `
             <div class="foreCard flex-center flex-betw">
              <span class="dayN cool-gray">${dayName}</span>
@@ -178,7 +180,10 @@ export async function getWeather(cityName) {
 
     const data = await currentRes.json();
     const forecastData = await forecastRes.json();
-console.log(forecastData.forecast.forecastday.length);
+
+    // 🌡️ Current Temperature Icon
+    const conditionIcon = data.current.condition.icon;
+    tempIcon.src = `https:${conditionIcon}`;
 
     // Update UI with WeatherAPI data
     updateBasicInfo(data.location.name, data.current.temp_c, forecastData.forecast.forecastday[0].day.daily_chance_of_rain);
@@ -247,6 +252,10 @@ console.log(forecastData.forecast.forecastday.length);
 
       // Calculate chance of rain from OpenWeather data
       const chanceOfRain = forecastData.list[0].pop ? Math.round(forecastData.list[0].pop * 100) : 0;
+
+      // Current Temprature Icon 
+      tempIcon.src = `https://openweathermap.org/img/wn/${currentData.weather[0].icon}@2x.png`;
+
 
       // Update UI with OpenWeather data
       updateBasicInfo(currentData.name, currentData.main.temp, chanceOfRain);
