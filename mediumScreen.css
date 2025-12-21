@@ -1,0 +1,522 @@
+/* -------------------------------------------------------------
+                      ⁡⁣⁢⁣​‌‌‌𝗠𝗲𝗱𝗶𝘂𝗺 𝗦𝗰𝗿𝗲𝗲𝗻 ​⁡
+--------------------------------------------------------------- */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    html,
+    body {
+        font-size: 18px;
+        background-color: rgb(11, 19, 30);
+    }
+
+    .parent-container {
+        justify-content: end;
+    }
+
+    .storeCity #container-right,
+    .responsive-feature #container-right {
+        display: none !important;
+    }
+
+    /* ​‌‍‌⁡⁣⁢⁣𝗙𝗶𝗿𝘀𝘁 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​  */
+    #first-container {
+        position: fixed;
+        /* left: clamp(2.7%, 2.7%, 100px); */
+        right: 83%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 89px;
+        height: clamp(95.9vh, 97vh, 97.5vh);
+    }
+
+    /* First Container column-section  */
+    #column-section {
+        border-radius: 1rem !important;
+        justify-content: start !important;
+    }
+
+    #lowerDiv {
+        gap: clamp(3vh, 4vh, 5vh);
+    }
+
+    #lowerDiv i {
+        font-size: 1rem;
+    }
+
+    #lowerDiv p {
+        font-size: 0.85rem;
+    }
+
+    /* ​‌‍‌⁡⁣⁢⁣𝗦𝗲𝗰𝗼𝗻𝗱 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​  */
+    #second-container {
+        width: 77.3% !important;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+        margin-right: clamp(2.7%, 2.7%, 3%);
+    }
+
+    /* Input - row section  */
+    #input-row {
+        height: 2.7rem;
+    }
+
+    /* input-row = input  */
+    #input-row input {
+        height: 2.7rem;
+        font-size: 1rem;
+        padding-left: 0.938rem;
+        width: 88%;
+    }
+
+    /* Input Search fa-solid Icon Medium */
+    #input-row #search .fa-solid:active {
+        font-size: medium;
+    }
+
+    /* input-row search box  */
+    #search {
+        height: 2.7rem;
+        width: 12% !important;
+    }
+
+    /* ⁡⁣⁢⁣​‌‍‌𝗥𝗶𝗴𝗵𝘁 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗗𝗮𝘁𝗮​⁡ */
+    .index #second-container #container-right,
+    .responsive-setting #second-container #container-right {
+        margin-bottom: 1rem !important;
+    }
+
+
+    /* ------------------------------------------------------------------------- 
+                                  ⁡⁣⁣⁢​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​⁡
+  -------------------------------------------------------------------------  */
+    /* ------------------------------------------------------------------------- 
+                             ​‌‍‌⁡⁣⁢⁣𝗧𝗲𝗺𝗽𝗿𝗮𝘁𝘂𝗿𝗲 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
+  -------------------------------------------------------------------------  */
+    /* Temprature - Sectoin height set  */
+    .index #temprature,
+    .responsive-feature #temprature {
+        min-height: 240px !important;
+    }
+
+    /* for Index.html and features.html  */
+    .first1 {
+        gap: 3rem !important;
+    }
+
+    /* ------------------------------------------------------------------------- 
+                                  ⁡⁣⁢⁣​‌‍‌𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡
+  -------------------------------------------------------------------------  */
+
+    /* ------------------------------------------------------------------------- 
+                                  ⁡⁣⁢⁣​‌‍‌𝗔𝗱𝘃𝗶𝘀𝗼𝗿𝘆 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡
+  -------------------------------------------------------------------------  */
+    #advisory-section .conditionsData {
+        min-width: 92%;
+        gap: .6rem;
+    }
+
+    #advisory-section .conditionsData .data-index {
+        gap: 1.2rem;
+    }
+
+    /* ---------------------------
+   ICON DESIGN 
+---------------------------- */
+    #advisory-section .conditionsData .solid-icons {
+        margin-left: 0.8rem;
+        width: 23%;
+        padding: 1.4rem 0.5rem;
+    }
+
+    /* solid-icon i  */
+    #advisory-section .conditionsData .solid-icons i {
+        font-size: 1.5rem;
+    }
+
+    /* ---------------------------
+   TEXT STYLES
+---------------------------- */
+    /* Card title  */
+    #advisory-section .card-title {
+        font-size: 0.88rem !important;
+    }
+
+    /* Card main value  */
+    #advisory-section .card-value {
+        font-size: 1.2rem;
+    }
+
+    /* Card sub  */
+    #advisory-section .card-sub {
+        font-size: 0.85rem;
+    }
+
+    /* ------------------------------------------------------------------------- 
+                                  ​‌‍‌‍⁡⁣⁢⁣𝗔𝗶𝗿 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
+  -------------------------------------------------------------------------  */
+    #air-condition {
+        padding: 1.2rem 0 !important;
+        gap: 1.8rem;
+    }
+
+    #air-condition #airCon {
+        font-size: 0.9rem;
+    }
+
+    #air-condition .conditionsData {
+        width: 88% !important;
+    }
+
+    /* rain chance & uv index padding set  */
+    #rainChance,
+    #uvIndex {
+        padding-top: 2.3rem;
+    }
+
+    /* ConditionsData data-index fa-solid = i  */
+    #air-condition .conditionsData .data-index i {
+        font-size: 1.2rem;
+    }
+
+    /* ConditoinsData data-index p font styling */
+    #air-condition .conditionsData .data-index p {
+        font-size: 1rem;
+    }
+
+    /* ConditionsData data-index h1 font-size set */
+    #air-condition .data-index h1 {
+        margin-top: 0.3rem;
+        font-size: 1.7rem;
+    }
+
+    /* ------------------------------------------------------------------------- 
+                                  ⁡⁣⁢⁣​‌‍‌𝗥𝗶𝗴𝗵𝘁 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿​⁡
+  -------------------------------------------------------------------------  */
+
+    .parent-container #second-container #container-right {
+        padding-bottom: 4rem;
+    }
+
+    /* ------------------------------------------------------------------------- 
+                                 ⁡⁣⁢⁣​‌‍‌𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡
+  -------------------------------------------------------------------------  */
+
+    .index #forecast {
+        gap: 1.4rem !important;
+    }
+
+    /* Index page Forecast Section Title  */
+    .index #today-for {
+        padding-top: 1rem !important;
+    }
+
+    .index #forecast #showForecast {
+        gap: 0.8rem !important;
+    }
+
+    /* Wrapper Card on dark background */
+    .index .wrapper {
+        width: 130px !important;
+        gap: 1rem;
+        padding: 1.3rem 0 !important;
+    }
+
+    .index .wrapper img,
+    #container-right #showWeeklyFor img {
+        height: 3.5rem !important;
+        width: 3.5rem !important;
+    }
+
+    /* Wrapper Card on p font size set */
+    .index .wrapper p {
+        font-size: 1.2rem;
+    }
+
+    .index .wrapper h2 {
+        font-size: 1.55rem;
+    }
+
+    /* Braker height set */
+    .braker {
+        margin: 1.5rem 0;
+    }
+
+    /* titles font size set */
+    /* fore card font size set  */
+    .index #wf-heading,
+    #today-for,
+    .foreCard,
+    .minMax {
+        font-size: 0.96rem !important;
+    }
+
+    .index #showWeeklyFor {
+        width: 80% !important;
+    }
+
+    /* ------------------------------------------------------------------------- 
+                                ⁡⁢⁣⁣​‌‌‌𝗘​‌‌‌𝗡𝗗​ ​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​ ⁡
+  -------------------------------------------------------------------------  */
+
+    /* ------------------------------------------------------------------------- 
+                                ​‌‌‌⁡⁣⁣⁢𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆⁡​
+  -------------------------------------------------------------------------  */
+    /* Store-city Second - Container = Container Left  */
+    .storeCity #second-container #container-left {
+        height: 100vh !important;
+    }
+
+    #listCity {
+        width: 95%;
+    }
+
+    #second-container #container-left {
+        justify-content: start;
+    }
+
+    /* City-wrapper active remove button  */
+    .city-wrapper.active .remove-btn {
+        width: 18%;
+    }
+
+    /* City-wrapper active city card  */
+    .city-wrapper.active .city-card {
+        width: 82%;
+    }
+
+    /* City Card  */
+    .city-card {
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.8rem !important;
+    }
+
+
+    /* ------------------------------------------------------------------------- 
+                             ⁡⁢⁣⁣​‌‌‌𝗘𝗻𝗱 𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆​⁡ 
+  -------------------------------------------------------------------------  */
+
+    /* ------------------------------------------------------------------------- 
+                                 ⁡⁣⁣⁢​‌‌‌ 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽​⁡
+  -------------------------------------------------------------------------  */
+    /* Parent Container world Map height set  */
+    .world-map #worldMap {
+        height: 70vh;
+        margin-bottom: 2.4rem;
+    }
+
+    /* Parent Container container right  */
+    .world-map #container-right {
+        height: 60vh;
+        padding-bottom: 1rem !important;
+        margin-bottom: 4rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ------------------------------------------------------------------------- 
+                             ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽⁡​
+  -------------------------------------------------------------------------  */
+
+
+    /* ------------------------------------------------------------------------- 
+                                    ​‌‌‌⁡⁣⁣⁢𝗦𝗲𝘁𝘁𝗶𝗻𝗴⁡​
+  -------------------------------------------------------------------------  */
+
+    .responsive-setting {
+        flex-direction: row;
+    }
+
+    .responsive-setting #second-container #container-right {
+        padding-bottom: 0%;
+    }
+
+    .r-m {
+        display: none;
+    }
+
+    .first {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+
+    .premium,
+    .signUp {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .signUp button {
+        width: 60% !important;
+        margin-top: 0.5rem;
+    }
+
+
+    /* ------------------------------------------------------------------------- 
+                                ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗦𝗲𝘁𝘁𝗶𝗻𝗴⁡​
+  -------------------------------------------------------------------------  */
+
+    /* ------------------------------------------------------------------------- 
+                                  ​‌‌‌⁡⁣⁣⁢𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀⁡​
+  -------------------------------------------------------------------------  */
+    /* Features Page  */
+    .responsive-feature {
+        min-height: 100vh !important;
+    }
+
+    #weatherMetrics {
+        gap: 0.5rem;
+    }
+
+    /* Metric-Card width & padding set  */
+    .metricCard {
+        width: 49%;
+        padding: 1.4rem 0rem 1.3rem 0.9rem;
+    }
+
+    .metricCard i {
+        font-size: 1.17rem;
+    }
+
+    /* Metric-Card Metric-Info P font size set  */
+    .metricInfo p {
+        font-size: 1rem;
+    }
+
+    /* Metric Card h3 font size set  */
+    .metricCard h3 {
+        font-size: 1.2rem;
+    }
+
+    /* ------------------------------------------------------------------------- 
+                              ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀⁡​
+  -------------------------------------------------------------------------  */
+}
+
+@media (min-width: 601px) and (max-height: 500px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    #first-container #column-section {
+        justify-content: center !important;
+    }
+
+    #upperDiv {
+        display: none;
+    }
+
+    #lowerDiv {
+        justify-content: space-evenly;
+        height: 90%;
+    }
+
+    #lowerDiv div {
+        padding: 0;
+    }
+
+    #lowerDiv i {
+        font-size: clamp(1rem, 3.2vh, 2.2rem);
+    }
+
+    #lowerDiv p {
+        font-size: clamp(0.8rem, 2.6vh, 1.6rem);
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .parent-container {
+        box-shadow:
+            inset 22px 0 35px -25px rgba(80, 150, 255, 0.347),
+            inset -22px 0 35px -25px rgba(80, 150, 255, 0.347);
+    }
+
+    /* Wrapper Card on dark background */
+    .index .wrapper {
+        width: 135px !important;
+    }
+
+    #first-container {
+        width: 13%;
+        right: 80%;
+    }
+
+    #second-container {
+        width: 75% !important;
+        margin-right: 4.4%;
+    }
+
+    /* Temprature - Sectoin height set  */
+    .index #temprature,
+    .responsive-feature #temprature {
+        min-height: 250px !important;
+    }
+
+
+    .index #weekly-forecast #showWeeklyFor {
+        width: 75% !important;
+    }
+
+    .city-card {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 800px) {
+    #second-container {
+        margin-right: 7%;
+        width: 70% !important;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+
+    #first-container {
+        width: 12%;
+        right: 79%;
+    }
+
+    #second-container {
+        width: 68% !important;
+        margin-right: 8.5%;
+    }
+
+    .index #forecast #showForecast {
+        width: 90% !important;
+        gap: 0.9rem !important;
+    }
+
+    .index .wrapper {
+        padding: 1.4rem 0px !important;
+    }
+
+    .index #forecast #today-for,
+    .index #weekly-forecast #wf-heading {
+        width: 88% !important;
+    }
+
+    .first {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 900px) {
+
+    #first-container {
+        width: 11.5%;
+        /* left: 9%; */
+    }
+
+    /* #second-container {
+        margin-right: 9%;
+    } */
+
+    .index .wrapper {
+        width: 138px !important;
+    }
+}

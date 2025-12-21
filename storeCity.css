@@ -1,0 +1,274 @@
+#container-right {
+  background-color: rgb(11, 19, 30);
+}
+
+#temprature {
+  width: 100% !important;
+  margin-bottom: -0.938rem;
+}
+
+#temprature #tempContent img {
+  width: 5.625rem !important;
+  height: 5.625rem !important;
+}
+
+#tempContent.sunny {
+  filter: drop-shadow(0 0 5px rgba(255, 190, 0, 0.5))
+    drop-shadow(0 0 20px rgba(255, 170, 0, 0.4))
+    drop-shadow(0 0 20px rgba(255, 150, 0, 0.4));
+}
+
+#DefaultCityName,
+#tempDegree {
+  font-size: 2.2rem !important;
+}
+/* Chance of rain font size  */
+#temprature #defaultCity #cRain {
+  font-size: 0.85rem;
+  color: #9399a2;
+}
+
+#tempDegree {
+  margin-top: -0.312rem !important;
+}
+
+/* Forecast Section  */
+#forecast {
+  width: 92% !important;
+  gap: 1rem !important;
+}
+
+#today-for {
+  width: 94% !important;
+}
+
+#weekly-forecast {
+  min-height: 40% !important;
+  gap: 0.35rem;
+  justify-content: flex-start !important;
+}
+
+#wf-heading {
+  padding: 0 !important;
+}
+
+#container-right {
+  height: 100%;
+  border-radius: 0% !important;
+  gap: 0.938rem;
+  align-self: flex-end;
+}
+
+.foreCard {
+  width: 90% !important;
+}
+
+.border-bottom {
+  width: 90%;
+  height: 1px;
+  opacity: 1;
+  background-color: rgb(53, 69, 94);
+  border-radius: 2px;
+}
+
+.bottomB{
+  width: 97% !important;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* cityCard  */
+#listCity {
+  background-color: rgb(11, 19, 30);
+  margin-top: 0.625rem;
+  width: 100%;
+  height: 100%;
+  justify-content: start !important;
+  gap: 0.625rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Scrollbar hide karne ke liye */
+#listCity::-webkit-scrollbar {
+  display: none;
+}
+
+/* Wrapper = card + remove button */
+.city-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Default: button hidden */
+.city-wrapper .remove-btn {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Active: card shrinks & button visible */
+.city-wrapper.active .city-card {
+  width: 85%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.city-wrapper.active .remove-btn {
+  width: 15%;
+  opacity: 1;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+}
+
+/* Remove animation */
+.city-wrapper.remove {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+/* Card design */
+.city-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a2537;
+  border-radius: 0.938rem;
+  padding: 0.625rem 1.875rem 0.625rem 1.25rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  user-select: none;
+}
+
+.city-left {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.weather-icon {
+  width: 3.438rem;
+  height: 3.438rem;
+}
+
+.city-info h3 {
+  color: #fff;
+  font-size: 1.312rem;
+  margin: 0;
+}
+
+.city-info p {
+  color: #9ba1b3;
+  font-size: 0.938rem;
+  margin: 0.125rem 0 0;
+}
+
+.city-temp {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Remove button */
+.remove-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 0.938rem;
+  height: 100% !important;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Keyframes for juicy slide-out */
+@keyframes hyperNovaDropVanish {
+  0% {
+    opacity: 1;
+    transform: perspective(50rem) rotateY(0deg) rotateX(0deg) translateY(0)
+      scale(1);
+    filter: blur(0);
+  }
+
+  10% {
+    transform: perspective(50rem) rotateY(6deg) rotateX(-4deg) translateY(-5%)
+      scale(1.05);
+  }
+
+  25% {
+    transform: perspective(50rem) rotateY(-6deg) rotateX(5deg) translateY(5%)
+      scale(0.97);
+    filter: blur(0.025rem);
+  }
+
+  45% {
+    transform: perspective(50rem) rotateY(8deg) rotateX(-6deg) translateY(-10%)
+      scale(1.03);
+    opacity: 0.9;
+    filter: blur(0.05rem);
+  }
+
+  65% {
+    transform: perspective(50rem) rotateY(-12deg) rotateX(8deg) translateY(10%)
+      scale(0.93);
+    opacity: 0.7;
+    filter: blur(0.062rem);
+  }
+
+  80% {
+    transform: perspective(50rem) rotateY(15deg) rotateX(-10deg) translateY(30%)
+      scale(0.85);
+    opacity: 0.5;
+    filter: blur(0.113rem);
+  }
+
+  100% {
+    transform: perspective(50rem) rotateY(25deg) rotateX(-15deg) translateY(80%)
+      scale(0.75);
+    opacity: 0;
+    filter: blur(0.188rem);
+  }
+}
+
+.city-wrapper.remove {
+  animation: hyperNovaDropVanish 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.noCity {
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0, #00ff00);
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(255, 255, 255, 0.253);
+  -webkit-text-stroke: #00ff00;
+  background-size: 300% 300%;
+  animation: gradientMove 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

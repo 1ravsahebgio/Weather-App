@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Map</title>
+  <!-- Font Aswome cdnjs  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="storeCity.css" />
+  <link rel="stylesheet" href="worldMap.css" />
+  <link rel="stylesheet" href="largScreen.css">
+  <link rel="stylesheet" href="unityResponsive.css">
+  <link rel="stylesheet" href="mediumScreen.css">
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="smScreen.css">
+</head>
+
+<body>
+  <div class="parent-container world-map flex-center">
+    <section id="first-container" class="flex-center">
+      <section id="column-section" class="flex-center jus-start flex-col secondary-bg">
+        <div id="upperDiv" class="flex-center hidden">
+          <div id="tempImge">
+            <img src="https://assets.api.uizard.io/api/cdn/stream/d0bb0968-406e-4014-b9ab-080788e9d44b.png"
+              alt="TempUmbrella" />
+          </div>
+        </div>
+        <section id="lowerDiv" class="gray-light flex-center flex-col">
+          <div id="homeIcon" title="Weather" class="flex-col">
+            <i class="fas fa-cloud-sun-rain"></i>
+            <p>Weather</p>
+          </div>
+          <div id="cityIcon" title="Cities" class="flex-col">
+            <i class="fa-solid fa-list-ul">‌</i>
+            <p>Cities</p>
+          </div>
+          <div id="mapIcon" title="Map" class="flex-col">
+            <i class="fa-solid fa-map-location">‌</i>
+            <p>Map</p>
+          </div>
+          <div id="settingIcon" title="Setting" class="flex-col">
+            <i class="fa-solid fa-sliders"></i>
+            <p>Settings</p>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section id="second-container" class="flex-center space-betw">
+      <section id="container-left" class="flex-center flex-col space-betw">
+        <div id="input-row" class="flex-center jus-start secondary-bg">
+          <input type="text" class="secondary-bg" placeholder="Search for cities" title="Search for cities"
+            id="inputData" spellcheck="false" autocomplete="off" required />
+          <div id="search" class="flex-center" title="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <!-- Map Section -->
+        <section id="worldMap" class="flex-center flex-col">
+          <section id="map-container">
+            <div id="map"></div>
+          </section>
+        </section>
+      </section>
+
+      <section id="container-right" class="secondary-bg">
+        <!-- Cities List on Right Side -->
+        <section id="listCity" class="flex-center flex-col"></section>
+      </section>
+    </section>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="worldMap.js" type="module" defer></script>
+</body>
+
+</html>

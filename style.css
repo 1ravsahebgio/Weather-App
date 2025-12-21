@@ -1,4 +1,5 @@
-/* Universal Selector  */
+/*                                    ​‌‌‍‍⁡⁣⁢⁣𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗼𝗳 𝗦𝘁𝘆𝗹𝗶𝗻𝗴 𝗙𝗼𝗿 𝗔𝗹𝗹 𝗖𝗦𝗦 𝗙𝗶𝗹𝗲𝘀⁡​                                  */
+/* Universal selector  */
 * {
   padding: 0;
   margin: 0;
@@ -10,105 +11,131 @@
 /* html Body - Section */
 html,
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(9, 9, 9);
   height: 100%;
   width: 100%;
+  scrollbar-width: none;
 }
 
-/* Display Flex  */
+/* Imges select none */
+img {
+  user-select: none;
+}
+
+/* This image only for Mobiale */
+#um-img {
+  display: none;
+}
+
+/* Display flex  */
 body,
 #lowerDiv div,
 #showForecast div,
-#conditionsData .data-index,
+.conditionsData .data-index,
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#um-img {
-  display: none;
-}
-/* Flex Colounm */
+
+/* Flex direction colounm */
 .flex-col {
   flex-direction: column;
 }
-/* Flex Between  */
-.flex-betw {
+
+/* Justify-Content Start */
+.jus-start {
+  justify-content: start !important;
+}
+
+/* Align Items Start  */
+.align-start {
+  align-items: start !important;
+}
+
+/* Flex space between  */
+.space-betw {
   justify-content: space-between;
 }
 
-/* Color  */
-/* Gray Light  */
+/* Color style  */
+/* Gray Light color */
 .gray-light {
   color: #c4cad3;
 }
 
+/* Cool gray color  */
 .cool-gray {
   color: #9399a2;
 }
 
-/* secondary-bg */
+/* secondary-bg color */
 .secondary-bg {
   background-color: rgb(32, 43, 59);
 }
+
 /* Parent - Container  */
 .parent-container {
   background-color: rgb(11, 19, 30);
   width: 90%;
   height: 100vh;
-  gap: 15px;
+  gap: 0.938rem;
+  scrollbar-width: none !important;
 }
 
-/* Fist - Container Cloumn data  */
+/*  -------------------------------------------  ​‌‍‌⁡⁣⁢⁣𝗙𝗶r𝘀𝘁 - 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​  -------------------------------------------  */
 #first-container {
-  height: 94.95%;
+  height: 96%;
   width: 6.5%;
 }
 
-/* Column - Section  */
+
+/* First container column - section  */
 #column-section {
   height: 100%;
   width: 100%;
-  justify-content: start;
-  border-radius: 15px;
+  gap: 1.2rem;
+  border-radius: 0.938rem;
 }
 
-/* Upper - Div  */
+/* column Upper - Div  */
 #upperDiv {
-  height: 12%;
+  margin-top: 7px;
+  height: 10%;
   width: 70%;
 }
 
+/* Upper div umbrella image  */
 #upperDiv #tempImge img {
-  height: 65px;
-  width: 55px;
+  height: 5.062rem;
+  width: 3.438rem;
 }
 
 /* Lower Div  */
 #lowerDiv {
-  height: 55%;
-  width: 70%;
-  justify-content: space-evenly;
+  height: auto;
+  width: auto;
+  gap: 1.8rem;
 }
 
-/* Lower Div Child Divs  */
+/* Lower Div child divs  */
 #lowerDiv div {
-  gap: 5px;
+  gap: 0.2rem;
   color: #898f99;
   cursor: pointer;
 }
 
-/* Lower Div I  */
+/* Lower Div i  */
 #lowerDiv i {
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
   font-size: 0.9rem;
 }
 
 /* Lower Div P  */
 #lowerDiv p {
-  font-size: 0.86rem;
-  letter-spacing: 1.2px;
+  font-size: 0.79rem;
+  letter-spacing: 0.075rem;
 }
 
 /* Lower Div Hover  */
@@ -116,65 +143,58 @@ body,
   color: #eeefef;
 }
 
-/* Lower Div Hover On P  */
-#lowerDiv div:hover p {
-  font-weight: 500;
-}
-
-/* Second - Container  */
+/* ----------------------------------------  ​‌‍‌⁡⁣⁢⁣𝗦𝗲𝗰𝗼𝗻𝗱 - 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​  ----------------------------------------  */
 #second-container {
   width: 88%;
-  height: 94.95%;
+  height: 96%;
 }
 
-/* Right - Container  */
+/* ----------------------------------------  ​‌‍‌⁡⁣⁢⁣𝗟𝗲𝗳𝘁 - 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​  ---------------------------------------- */
 #container-left {
   width: 63%;
-  margin-left: 5px;
+  margin-left: 0.312rem;
   height: 100%;
 }
 
-/* Input - row Section  */
+/* Input - row section  */
 #input-row {
   width: 100%;
-  height: 40px;
-  justify-content: start;
+  height: 2.5rem;
+  border-radius: 0.75rem;
 }
 
 /* Input Row Section Input  */
 #input-row input {
   width: 94%;
-  height: 40px;
+  height: 2.5rem;
   font-size: 0.9rem;
-  padding-left: 10px;
+  padding-left: 0.625rem;
   color: white;
   border: none;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  user-select: none;
 }
 
 /* Input Placeholder  */
 #input-row input::placeholder {
   color: rgb(255, 255, 255);
   opacity: 0.9;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.069rem;
 }
 
 /* Input Focus  */
-#input-row input:focus {
-  outline: none;
-}
-
+#input-row input:focus,
 input:focus-visible {
   outline: none;
 }
 
-/* Input Search  */
+/* Input row  Search button  */
 #input-row #search {
   width: 6%;
-  height: 40px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  height: 2.5rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
   cursor: pointer;
 }
 
@@ -189,270 +209,349 @@ input:focus-visible {
   font-size: large;
 }
 
-/* AutoFill Section  */
-input:-internal-autofill-selected,
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px rgb(32, 43, 59) inset !important;
-  -webkit-text-fill-color: white !important;
-  transition: background-color 9999s ease-in-out 0s !important;
-}
-
-input:-webkit-autofill::first-line,
-input:autofill::first-line {
-  color: white !important;
-}
-
-/* Left - Container  */
-#container-right {
-  width: 35%;
-  height: 100%;
-  border-radius: 25px;
-}
-
-/* Main - Section  */
+/* -------------------------------------  ​‌‍‌⁡⁣⁢⁣Main - Section⁡​  ------------------------------------- */
 #main-section {
   width: 100%;
   height: 100%;
   justify-content: space-evenly;
 }
 
+/* Main Section Content div  */
 #main-section .mainContent {
   height: 32%;
   width: 100%;
+  border-radius: 1rem;
 }
 
-#temprature-section {
-  color: white;
+/* Temprature Background */
+#temprature span,
+#tempDegree,
+#tempContent {
+  z-index: 999;
 }
 
-#temprature-section .first1 {
-  gap: 30px;
-  align-items: start;
+#temprature {
+  position: relative;
+}
+
+#temprature .tepratureBack {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+ 
+/* Temprature Section */
+#temprature .first1 {
+  gap: 1.7rem;
   width: 60%;
   height: 100%;
 }
 
-#temprature-section .first1 #tempDegree,
-#temprature-section .first1 #defaultCity {
+/* Temprature first1 padding */
+#temprature .first1 #tempDegree,
+#temprature .first1 #defaultCity {
   width: 100%;
-  padding-left: 30px;
+  padding-left: 1.875rem;
 }
 
-#temprature-section #defaultCity div,
+/* Temprature default city and temp degree  */
+#temprature #defaultCity #DefaultCityName,
 #tempDegree {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: bolder;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
+  color: rgb(240, 240, 240);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-#temprature-section #defaultCity div {
-  color: #dde0e4;
+/* Temrature Degree Height & Temprature Degree font size & style color  */
+#temprature #tempDegree {
+  height: 3.125rem;
+  font-size: 2.45rem;
 }
 
-#temprature-section #tempDegree span {
-  color: #f0f1f1;
+/* Chance of rain font size & color  */
+#temprature #defaultCity #cRain {
+  font-size: 0.85rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-#temprature-section #defaultCity span {
-  font-size: 0.9rem;
-}
-
-#temprature-section #tempContent {
+/* Temprature Image div  */
+#temprature #tempContent {
   width: 30%;
 }
 
-#temprature-section #tempContent img {
-  height: 10rem;
-  width: 10rem;
+/* Temprature Image  */
+#temprature #tempContent img {
+  height: 7rem;
+  width: 7rem;
+}
+
+/* ⁡⁣⁢⁢Animation⁡ */
+#tempContent img {
+  animation: none;
+}
+
+/* NIGHT WRAPPER */
+#tempContent.night {
+  position: relative;
+  display: inline-block;
+}
+
+/* ⭐ Tiny soft stars (lightweight, no blur, no lag) */
+#tempContent.night::before,
+#tempContent.night::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  /* ⭐ chota size */
+  height: 3px;
+
+  background: #ffffffcc;
+  /* normal white star */
+  border-radius: 50%;
+
+  /* very light twinkle (no heavy glow) */
+  animation: tinyTwinkle 1.6s infinite alternate ease-in-out;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* ⭐ Star 1 */
+#tempContent.night::before {
+  top: -4px;
+  left: 20%;
+  animation-delay: 0.2s;
+}
+
+/* ⭐ Star 2 */
+#tempContent.night::after {
+  top: 2px;
+  right: 22%;
+  animation-delay: 0.8s;
+}
+
+/* ⭐ Lightweight twinkle animation */
+@keyframes tinyTwinkle {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 🌙 Moon animation (same as before) */
+#tempContent.night img {
+  animation: moonFloat 2.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px #a8baff);
+  position: relative;
+  z-index: 3;
+}
+
+@keyframes moonFloat {
+  0% {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 8px #8fa8ff);
+  }
+
+  50% {
+    transform: translateY(-5px) scale(1.05);
+    filter: drop-shadow(0 0 15px #dbe2ff);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 8px #8fa8ff);
+  }
+}
+
+
+/*  /* SUNNY MODE — container breathes (smooth scale) */
+#tempContent.sunny {
+  position: relative;
+  z-index: 3;
+  animation: sunBreath 7s ease-in-out infinite;
+  will-change: transform;
+  /* Very important */
+  transform-origin: 50% 50%;
+
+  /* Glow */
+  filter: drop-shadow(0 0 18px rgba(255, 190, 0, 0.9)) drop-shadow(0 0 28px rgba(255, 170, 0, 0.7)) drop-shadow(0 0 45px rgba(255, 150, 0, 0.55));
+}
+
+#tempContent.sunny img {
+  animation: sunRotate 25s linear infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Breathing keyframes */
+@keyframes sunBreath {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Rotation keyframes */
+@keyframes sunRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*         ///////////////////////////////////////////////////////////////////////////////////        */
+
+/* -----------------------------------------------  ⁡⁣⁢⁣​‌‍‌𝗥𝗶𝗴𝗵𝘁 - 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿​⁡   ------------------------------------------- */
+#container-right {
+  width: 35%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth !important;
+}
+
+#showForecast .wrapper {
+  gap: 0.3rem;
 }
 
 /* Forecast Section  */
-#forecast-section {
-  border-radius: 25px;
-  padding-bottom: 10px;
-  padding-top: 12px;
+/* Forecast imges */
+#showForecast img {
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
-#forecast-section #today-for {
-  color: #d8dde5;
-  width: 90%;
-  justify-content: start;
-  margin-bottom: 15px;
-}
-
-#forecast-section #showForecast {
-  height: 100%;
-  color: #d8dde5;
-}
-
+/* Show forecast divs  */
 #showForecast div {
-  margin-top: -10px;
   flex-direction: column;
 }
 
+/* h2 styling */
+#showForecast div h2 {
+  padding-top: 0.156rem !important;
+  color: #dde0e4 !important;
+}
+
+/* Forecast p styling */
+#forecast #showForecast p {
+  color: #9399a2;
+}
+
+/* Show Forecast  */
+#forecast #showForecast {
+  height: 100%;
+  gap: 1.25rem;
+}
+
+/* Column styling  */
 .rightB {
-  width: 1px;
+  width: 0.062rem;
   height: 90%;
   opacity: 1;
   background-color: rgb(53, 69, 94);
-  border-radius: 2px;
-  margin: 0px 20px;
+  border-radius: 0.125rem;
 }
 
-#sixAm img,
-#nineAm img,
-#twelvePm img,
-#threePm img,
-#sixPm img,
-#ninePm img {
-  width: 50px;
-  height: 50px;
-}
-
-#showForecast div h2 {
-  padding-top: 2.5px !important;
-}
-
+/* - Removing border */
 #showForecast #ninePm {
   border: none !important;
 }
 
-#forecast-section #today-for p {
-  font-size: 0.7rem;
-  font-weight: 600;
-}
-
-/* Air Condition - Section  */
-#airConditions-section {
-  border-radius: 25px;
-}
-
-#airConditions-section #airCon {
-  width: 90%;
-  min-height: 20%;
-  margin-top: 5px;
-}
-
-#airCon p {
-  font-size: 0.7rem;
-  font-weight: 700;
-}
-
-#airCon #seeBtn {
-  font-size: 0.75rem;
-  background-color: #44a3ff;
-  color: #d8e3f4;
-  border: none;
-  cursor: pointer;
-  padding: 3px 6px;
-  border-radius: 10px;
-}
-
-#airCon #seeBtn:active {
-  background-color: #2793ff;
-}
-
-#airConditions-section #conditionsData {
-  width: 90%;
-  height: 90%;
-  flex-wrap: wrap;
-  justify-content: start;
-}
-
-#conditionsData .data-index {
-  height: 40%;
-  width: 40%;
-  gap: 10px;
-  justify-content: start;
-}
-
-#airConditions-section #wind,
-#airConditions-section #uvIndex {
-  padding-left: 30px;
-}
-
-#conditionsData .data-index i {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-#conditionsData .solid-icons {
-  margin-bottom: 27px;
-}
-
-#conditionsData .data-index p {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-#conditionsData .data-index h1 {
-  font-size: 1.6rem;
-}
-
-/* Right Container  */
+/* ⁡⁣⁢⁣𝗪𝗲𝗲𝗸𝗹𝘆 𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡  */
 #container-right #weekly-forecast {
   width: 100%;
-  height: 100%;
-  justify-content: start;
+  height: auto;
 }
 
-#container-right #wf-heading {
+/* Weekly forecast & Today For Headding  */
+#container-right #wf-heading,
+#forecast #today-for {
   width: 85%;
   font-size: 0.8rem;
   font-weight: 600;
-  padding-top: 20px;
 }
 
+/* Weekly forecast headding padding */
+#container-right #wf-heading {
+  padding-top: 1.25rem;
+}
+
+/* Show weekly forecast section  */
 #weekly-forecast #showWeeklyFor {
   width: 85%;
-  height: 95%;
-  gap: 1.6%;
+  height: 100%;
+  gap: 0.4rem !important;
 }
 
+/* Fore Cards */
 #showWeeklyFor .foreCard {
   width: 100%;
 }
 
+/* Day Name */
 #showWeeklyFor .dayN {
-  font-size: 0.8rem;
-  font-size: 500;
+  width: 3.125rem;
 }
 
+/* Imges & Span */
 #showWeeklyFor .imgSpan {
   width: 45%;
   justify-content: space-around;
 }
 
-#showWeeklyFor .imgSpan span {
+/* Styling forecard */
+.foreCard {
   font-size: 0.8rem;
   font-weight: 600;
 }
 
+/* Weather Condition text */
 #showWeeklyFor .containtDiv {
   width: 40%;
-  justify-content: end;
+  text-align: end;
 }
 
-#showWeeklyFor .min-max {
-  font-weight: 600;
-}
-
-#showWeeklyFor .max-temp,
-#showWeeklyFor .min-temp {
+/* Minimum Temp & Maximum Temp  */
+#showWeeklyFor .minMax {
   font-size: 0.9rem;
 }
 
+/* / Slash margin set */
 #showWeeklyFor .slash {
-  margin: 0 -2px;
+  margin: 0 -0.125rem;
+  user-select: none;
 }
 
+/* Bottom row of show weekly forecast  */
 #showWeeklyFor .bottomB {
   width: 100%;
-  height: 1px;
+  height: 0.062rem;
   opacity: 1;
   background-color: rgb(53, 69, 94);
-  border-radius: 2px;
+  border-radius: 0.125rem;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Last bottom row remove in show weekly forecast  */
+#showWeeklyFor>.bottomB:last-of-type {
+  display: none;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <!-- Font Aswome cdnjs  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="setting.css" />
+  <link rel="stylesheet" href="largScreen.css">
+  <link rel="stylesheet" href="unityResponsive.css">
+  <link rel="stylesheet" href="mediumScreen.css">
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="smScreen.css">
+</head>
+
+<body>
+  <div class="parent-container responsive-setting flex-center">
+    <h1 class="r-m">Settings</h1>
+    <section id="first-container" class="flex-center">
+      <section id="column-section" class="flex-center jus-start flex-col secondary-bg">
+        <div id="upperDiv" class="flex-center hidden">
+          <div id="tempImge">
+            <img src="https://assets.api.uizard.io/api/cdn/stream/d0bb0968-406e-4014-b9ab-080788e9d44b.png"
+              alt="TempUmbrella" />
+          </div>
+        </div>
+        <section id="lowerDiv" class="gray-light flex-center flex-col">
+          <div id="homeIcon" title="Weather" class="flex-col">
+            <i class="fas fa-cloud-sun-rain"></i>
+            <p>Weather</p>
+          </div>
+          <div id="cityIcon" title="Cities" class="flex-col">
+            <i class="fa-solid fa-list-ul">‌</i>
+            <p>Cities</p>
+          </div>
+          <div id="mapIcon" title="Map" class="flex-col">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Map</p>
+          </div>
+          <div id="settingIcon" title="Setting" class="flex-col">
+            <i class="fa-solid fa-sliders"></i>
+            <p>Settings</p>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section id="second-container" class="flex-center space-betw">
+      <section id="container-left" class="flex-center flex-col space-betw">
+        <div id="input-row" class="flex-center jus-start secondary-bg">
+          <input type="text" class="secondary-bg" placeholder="Search for cities" disabled />
+          <div id="search" class="flex-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <section id="main-section" class="flex-center flex-col">
+          <section class="settings-container">
+            <h2 class="settings-title">UNITS</h2>
+            <!-- Units Section -->
+            <section class="settings-section first secondary-bg unit-box flex-col">
+              <section class="unit-group">
+                <span class="unit-label cool-gray">TEMPERATURE</span>
+                <section class="unit-options">
+                  <div class="flex-container flex-center">
+                    <div class="unit-option active">Celsius</div>
+                    <div class="unit-option">Fahrenheit</div>
+                  </div>
+                </section>
+              </section>
+
+              <section class="unit-group">
+                <span class="unit-label cool-gray">WIND SPEED</span>
+                <section class="unit-options">
+                  <div class="flex-container flex-center">
+                    <div class="unit-option active">km/h</div>
+                    <div class="unit-column"></div>
+                    <div class="unit-option">m/s</div>
+                    <div class="unit-column"></div>
+                    <div class="unit-option">Knots</div>
+                  </div>
+                </section>
+              </section>
+
+              <section class="unit-group">
+                <span class="unit-label cool-gray">PRESSURE</span>
+                <section class="unit-options">
+                  <div class="flex-container flex-center">
+                    <div class="unit-option">InPa</div>
+                    <div class="unit-column"></div>
+                    <div class="unit-option">Inches</div>
+                    <div class="unit-column"></div>
+                    <div class="unit-option active">HPa</div>
+                    <div class="unit-column"></div>
+                    <div class="unit-option">mm</div>
+                  </div>
+                </section>
+              </section>
+
+              <section class="unit-group">
+                <span class="unit-label cool-gray">PRECIPITATION</span>
+                <section class="unit-options">
+                  <div class="flex-container flex-center">
+                    <div class="unit-option active">Millimeters</div>
+                    <div class="unit-option">Inches</div>
+                  </div>
+                </section>
+              </section>
+
+              <section class="unit-group">
+                <span class="unit-label cool-gray">DISTANCE</span>
+                <section class="unit-options">
+                  <div class="flex-container flex-center">
+                    <div class="unit-option active">Kilometers</div>
+                    <div class="unit-option">Miles</div>
+                  </div>
+                </section>
+              </section>
+            </section>
+
+            <!-- Notifications Section -->
+            <div id="setting-box" class="flex-center flex-col">
+              <section class="settings-section">
+                <h2 class="settings-title">NOTIFICATIONS</h2>
+                <section class="toggle-section toggle-box secondary-bg flex-center space-betw">
+                  <div>
+                    <div class="toggle-label">Notifications</div>
+                    <div class="toggle-desc cool-gray">
+                      Be aware of the weather
+                    </div>
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked />
+                    <span class="slider"></span>
+                  </label>
+                </section>
+              </section>
+
+              <!-- General Settings Section -->
+              <section class="settings-section">
+                <h2 class="settings-title">GENERAL</h2>
+                <div class="general-box secondary-bg">
+                  <section class="toggle-section secondary-bg flex-center space-betw">
+                    <div>
+                      <div class="toggle-label">12-Hour Time</div>
+                    </div>
+                    <label class="toggle-switch">
+                      <input type="checkbox" />
+                      <span class="slider"></span>
+                    </label>
+                  </section>
+                  <section class="toggle-section secondary-bg flex-center space-betw">
+                    <div>
+                      <div class="toggle-label">Location</div>
+                      <div class="toggle-desc cool-gray">
+                        Get weather of your location
+                      </div>
+                    </div>
+                    <label class="toggle-switch">
+                      <input type="checkbox" checked />
+                      <span class="slider"></span>
+                    </label>
+                  </section>
+                </div>
+              </section>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section id="container-right" class="flex-center flex-col">
+        <!-- Premium Section -->
+        <section class="premium secondary-bg">
+          <h1 class="headding-setting grayish-blue">Advanced</h1>
+          <hr class="border-bottom" />
+          <h2 class="premium-title grayish-blue">Get new experience</h2>
+          <ul class="premium-features">
+            <li class="cool-gray">✓ Ad free</li>
+            <li class="cool-gray">✓ Health activities overview</li>
+            <li class="cool-gray">✓ Severe weather notifications</li>
+          </ul>
+          <div class="premium-price grayish-blue">$5.99/month</div>
+          <button class="subscribe-btn">Subscribe Now</button>
+        </section>
+
+        <!-- Sign Up Section -->
+        <section class="signUp secondary-bg flex-col flex-center">
+          <h2 class="sign-title grayish-blue">Never forget your umbrella!</h2>
+          <hr class="border-bottom" />
+          <p class="sign-desc cool-gray">
+            Sign up for our daily weather newsletter personalized just for
+            you.
+          </p>
+          <button class="signup-btn">Sign up</button>
+        </section>
+      </section>
+    </section>
+  </div>
+
+  <script src="setting.js" type="module" defer></script>
+</body>
+
+</html>

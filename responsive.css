@@ -1,218 +1,467 @@
-/* Mobile ke liye (max-width 600px) */
-@media (max-width: 600px) {
-  html,
-  body {
-    height: auto !important;
-  }
+ /* -------------------------------------------------------------
+                            ⁡⁣⁢⁣​‌‌‍𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝘃​⁡
+--------------------------------------------------------------- */
 
-  .parent-container {
-    height: auto !important;
-    padding-top: 10px;
-  }
+ /* Mobile (max-width 600px) */
+ @media (max-width: 600px) {
+   /* responsive.css — inside the @media (max-width: ...) block near top */
+   /* ,
+   ::before,
+   ::after {
+     backdrop-filter: none !important;
+     -webkit-backdrop-filter: none !important;
+     filter: none !important;
+   } */
 
-  .parent-container,
-  #first-container,
-  #input-row,
-  #search .fa-solid,
-  #container-left,
-  #main-section,
-  #forecast-section,
-  #showForecast,
-  #airConditions-section,
-  #conditionsData,
-  #container-right {
-    width: 100% !important;
-  }
+   /* Width 100% set  */
+   #first-container {
+     width: 100% !important;
+   }
 
-  /* Flex Direction  */
-  #first-container,
-  #column-section,
-  #lowerDiv {
-    flex-direction: row !important;
-  }
+   /* Flex Direction set */
+   #first-container,
+   #column-section,
+   #lowerDiv {
+     flex-direction: row !important;
+   }
 
-  #forecast-section,
-  #airConditions-section,
-  #container-right {
-    margin-top: 20px;
-  }
+   /* First - Container  */
+   #first-container {
+     height: 7% !important;
+     position: fixed;
+     bottom: 0rem;
+     left: 0rem;
+     z-index: 100;
+   }
 
-  #first-container {
-    height: 7% !important;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-  }
+   /* Column - Sectoin */
+   #column-section {
+     justify-content: center !important;
+   }
 
-  #column-section {
-    justify-content: center !important;
-    /* alrady hai check */
-  }
 
-  #lowerDiv i {
-    font-size: 1.1rem !important;
-  }
+   /* Lower Div = Div active transfor set  */
+   #lowerDiv div:active {
+     transform: scale(1.1);
+   }
 
-  .hidden,
-  #lowerDiv p,
-  #showForecast .dis-none {
-    display: none !important;
-  }
+   /* Lower Div i font size set  */
+   #lowerDiv i {
+     font-size: 1.2rem !important;
+   }
 
-  #container-left {
-    margin: 0% !important;
-  }
+   /* ------------------------       ​‌‌‌⁡⁢⁣⁢𝗗𝗶𝘀𝗽𝗹𝗮𝘆 𝗡𝗼𝗻𝗲⁡​    az  ------------------------ */
 
-  #temprature-section .first1 #tempDegree,
-  #temprature-section .first1 #defaultCity {
-    padding-left: 0px !important;
-  }
+   .hidden,
+   #lowerDiv p,
+   #showForecast .dis-none,
+   .storeCity #container-right,
+   .responsive-setting #input-row,
+   .responsive-mobaile {
+     display: none !important;
+   }
 
-  #input-row {
-    margin-top: 5px;
-  }
+   /* LowerDiv width set  */
+   #lowerDiv {
+     width: calc(100% - 10%);
+   }
 
-  #input-row input {
-    font-size: 1rem;
-    padding-left: 15px;
-  }
+   #input-row input {
+     width: 86%;
+   }
 
-  #search {
-    width: 10% !important;
-  }
+   #input-row #search {
+     width: 14%;
+   }
 
-  #column-section {
-    border-radius: 0% !important;
-  }
+   /* Umbrella Imge = div display block-set */
+   #um-img {
+     display: block;
+     margin-top: 1.5rem;
+     margin-bottom: -1rem;
+   }
 
-  #lowerDiv {
-    width: calc(100% - 10%);
-  }
+   /* Umbrella Image height & width Set  */
+   #um-img img {
+     height: 6.25rem;
+     width: 4.375rem;
+   }
 
-  #second-container {
-    flex-wrap: wrap;
-  }
+   /* TempContent sunny image filter set  */
+   #tempContent.sunny img {
+     filter: drop-shadow(0 0 8px rgba(255, 180, 0, 0.85));
+   }
 
-  #main-section {
-    margin-top: 10px;
-  }
 
-  #main-section .first1 {
-    width: 80% !important;
-    padding-left: 15px;
-  }
+   /* ------------------------------------------------------------------------- 
+                                  ⁡⁣⁣⁢​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​⁡
+  -------------------------------------------------------------------------  */
+   #advisory-section .conditionsData .solid-icons {
+     width: 24%;
+   }
 
-  #DefaultCityName {
-    margin-bottom: 5px !important;
-  }
+   /* Wrapper Card on dark background */
+   .index .wrapper {
+     border-radius: 10px;
+   }
 
-  #tempDegree {
-    margin-top: -10px;
-  }
+   .index .wrapper p {
+     font-weight: 500;
+   }
 
-  #tempContent {
-    margin-bottom: 20px;
-  }
+   /* ------------------------------------------------------------------------- 
+                                ⁡⁢⁣⁣​‌‌‌𝗘​‌‌‌𝗡𝗗​ ​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​ ⁡
+  -------------------------------------------------------------------------  */
 
-  #tempContent img {
-    width: 90px !important;
-    height: 90px !important; 
-  }
 
-  #forecast-section {
-    height: auto !important;
-    border-radius: 5% !important;
-    padding: 15px 0px 20px 0px !important;
-  }
+   /* ------------------------------------------------------------------------- 
+                                ​‌‌‌⁡⁣⁣⁢𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆⁡​
+  -------------------------------------------------------------------------  */
 
-  #showForecast {
-    height: auto;
-    flex-wrap: wrap;
-    padding-top: 20px;
-  }
+   /* City Card  */
+   .city-card {
+     padding-top: 0.8rem !important;
+     padding-bottom: 0.8rem !important;
+   }
 
-  #showForecast .wrapper {
-    width: 25%;
-  }
 
-  /* Border in Forecast section */
-  #showForecast .rightB {
-    height: auto !important;
-    padding: 40px 0px;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
-  }
+   /* City-wrapper active remove button  */
+   .city-wrapper.active .remove-btn {
+     width: 20% !important;
+   }
 
-  /* wrapper margin */
-  #showForecast .margin-t {
-    margin-top: 20px !important;
-  }
+   /* City-wrapper active city card  */
+   .city-wrapper.active .city-card {
+     width: 80%;
+   }
 
-  #airConditions-section {
-    border-radius: 5% !important;
-    padding: 20px 5px 25px 15px !important;
-  }
+   /* Weather Icon  */
+   .weather-icon {
+     width: 3.125rem;
+     height: 3.125rem;
+   }
 
-  #airConditions-section #airCon {
-    width: 100% !important;
-    height: auto;
-    margin-top: -5px !important;
-  }
+   /* City Info font size set  */
+   .city-info h3 {
+     font-size: 1.24rem;
+   }
 
-  #airCon a {
-    padding-right: 20px !important;
-  }
+   /* City Info p font size set  */
+   .city-info p {
+     font-size: 0.9rem;
+   }
 
-  #conditionsData {
-    width: 100% !important;
-    justify-content: space-between !important;
-    padding: 0 !important;
-    padding-top: 20px !important;
-  }
+   /* City Temprature font size set  */
+   .city-temp {
+     font-size: 1.475rem;
+   }
 
-  .data-index {
-    width: 45% !important;
-  }
+   /* City card remove button  */
+   .remove-btn {
+     font-size: 1.75rem;
+   }
 
-  .data-index h1 {
-    font-size: 1.4rem !important;
-  }
 
-  #rainChance,
-  #uvIndex {
-    padding-top: 30px;
-  }
+   /* ------------------------------------------------------------------------- 
+                             ⁡⁢⁣⁣​‌‌‌𝗘𝗻𝗱 𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆​⁡ 
+  -------------------------------------------------------------------------  */
 
-  #airConditions-section #wind,
-  #airConditions-section #uvIndex {
-    padding-left: 0px !important;
-  }
+   /* ------------------------------------------------------------------------- 
+                                    ​‌‌‌⁡⁣⁣⁢𝗦𝗲𝘁𝘁𝗶𝗻𝗴⁡​
+  -------------------------------------------------------------------------  */
+   /* Setting Page flex-coloumn set */
+   .responsive-setting {
+     flex-direction: column;
+   }
 
-  /* Right Container Data */
-  #container-right {
-    border-radius: 5% !important;
-    margin-bottom: 80px !important;
-    padding-bottom:  20px;
-  }
+   /* Setting Text Styling */
+   .r-m {
+     display: block;
+     font-size: 1.8rem;
+     font-weight: 700;
+     letter-spacing: 1px;
+     background: linear-gradient(135deg, #8fb7ff, #dbe7ff);
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin: 0.8rem 0rem -2rem 0rem !important;
+     padding-left: 0.2rem;
+     user-select: none;
+   }
 
-  #weekly-forecast .dayN{  
-    width: 50px;
-  }
-  #container-right #showWeeklyFor{ 
-    padding-top: 20px !important;
-  }
-  #showWeeklyFor .imgSpan{ 
-    justify-content: center;
-    gap: 15px;
-  }
-  #um-img {
-    display: block;
-    margin-bottom: -20px;
-  }
-  
-  #um-img img {
-    height: 100px;
-    width: 70px;
-  }
-}
-/* ///////////////////////////////////////////////////////////////////////////////////// */
+   /* Setting Title  padding margin set for mobaile screen */
+   .settings-title {
+     padding-left: 0.7rem !important;
+     margin-bottom: 0.4rem;
+   }
+
+   /* Premium Title text align set  */
+   .premium-section .premium-title {
+     text-align: left;
+   }
+
+   /* Setting Box padding set */
+   #setting-box {
+     padding-bottom: 1rem;
+   }
+
+   .signup-btn {
+     width: 70%;
+   }
+
+   /* ------------------------------------------------------------------------- 
+                                ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗦𝗲𝘁𝘁𝗶𝗻𝗴⁡​
+  -------------------------------------------------------------------------  */
+
+
+   /* ------------------------------------------------------------------------- 
+                                  ​‌‌‌⁡⁣⁣⁢𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀⁡​
+  -------------------------------------------------------------------------  */
+   /* Features Page  */
+   .responsive-feature {
+     margin-bottom: 3rem;
+   }
+
+   .metricCard {
+     margin-top: 2px;
+     border-radius: 0.8rem;
+   }
+
+   /* metric wraper bitween icon & text  */
+   .metricWrap {
+     gap: 0.4rem;
+   }
+
+   /* ------------------------------------------------------------------------- 
+                              ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀⁡​
+  -------------------------------------------------------------------------  */
+
+
+   /* ------------------------------------------------------------------------- 
+                                 ⁡⁣⁣⁢​‌‌‌ 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽​⁡
+  -------------------------------------------------------------------------  */
+
+
+   #worldMap {
+     height: calc(100vh - 12.5rem);
+     margin-bottom: 5rem;
+   }
+
+   #map-container {
+     border-radius: 0.625rem;
+   }
+
+   .weather-marker {
+     width: 2.188rem;
+     height: 2.188rem;
+     font-size: 0.7rem;
+   }
+
+   .weather-popup {
+     min-width: 7.5rem;
+   }
+
+   .weather-popup h3 {
+     font-size: 1rem;
+   }
+
+   .weather-popup .temp {
+     font-size: 1.1rem;
+   }
+
+   .remove-btn {
+     min-height: 75.8px !important;
+   }
+
+
+   /* ------------------------------------------------------------------------- 
+                           ​‌‌‌⁡⁢⁣⁣ 𝗘𝗻𝗱 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽⁡​
+  -------------------------------------------------------------------------  */
+
+ }
+
+
+
+
+
+ @media (max-width: 600px) and (min-height:850px) {
+   #first-container {
+     height: 6% !important;
+   }
+
+   /* Store-city Second - Container = Container Left  */
+   .storeCity #second-container #container-left {
+     height: 95vh !important;
+   }
+
+   .metricCard {
+     padding-top: 1.2rem;
+     margin-top: 0.2rem;
+   }
+
+   /* metric wraper bitween icon & text  */
+   .metricWrap {
+     gap: 0.5rem;
+   }
+ }
+
+ @media (max-width: 600px) and (min-height: 700px) {
+
+   /* Features Page  */
+   .responsive-feature {
+     min-height: 93vh !important;
+     margin-bottom: 0%;
+   }
+
+   /* Features  Weather Metric Sectoin gap & padding set  */
+   #weatherMetrics {
+     padding-top: 1rem;
+   }
+ }
+
+ @media (max-width: 600px) and (min-height: 840px) {
+   .responsive-feature {
+     min-height: 100vh !important;
+   }
+ }
+
+ @media (max-width: 450px) {
+
+
+   /* City-wrapper active city card  */
+   .city-wrapper.active .city-card {
+     padding: 0.8rem 0.85rem;
+   }
+
+   /* City-wrapper active city left  */
+   .city-wrapper.active .city-left {
+     gap: 1.4rem;
+     transition: all 0.7s ease;
+   }
+ }
+
+ @media (min-width: 430px) and (max-width:600px) {
+
+   body {
+     background: linear-gradient(to top, #0e1e37, #0a0e1a, #0d1c36);
+   }
+
+   .parent-container {
+     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.6);
+     width: 95% !important;
+   }
+
+   #lowerDiv i {
+     font-size: 1.3rem !important;
+   }
+
+
+   /* City-wrapper active city left  */
+   .city-wrapper.active .city-left {
+     gap: 1.4rem;
+     transition: all 0.7s ease;
+   }
+
+   /* Air - Condition condition data  */
+   #air-condition .conditionsData {
+     width: 85% !important;
+   }
+
+   /* Wrapper Card on dark background */
+   .index .wrapper {
+     gap: 0.4rem !important;
+     width: 28% !important;
+   }
+
+   .index .wrapper p {
+     font-size: 1.1rem;
+   }
+
+   /* Setting Page  */
+   .subscribe-btn {
+     width: 60%;
+   }
+
+   .signup-btn {
+     width: 65%;
+   }
+
+ }
+
+ @media (min-width: 501px) and (max-width:600px) {
+   .parent-container {
+     width: 90% !important;
+   }
+
+   /* LowerDiv width set  */
+   #lowerDiv {
+     gap: 2.7rem;
+   }
+
+   #lowerDiv i {
+     font-size: 1.4rem !important;
+   }
+
+   #input-row input {
+     width: 88%;
+   }
+
+   #input-row #search {
+     width: 12%;
+   }
+
+   #advisory-section .conditionsData .solid-icons {
+     width: 22%;
+   }
+
+   /* ------------------------------------------------------------------------- 
+                                   ​‌‍‌⁡⁣⁢⁣𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
+  -------------------------------------------------------------------------  */
+
+   .index #forecast {
+     gap: 1.3rem !important;
+   }
+
+   .index #forecast #showForecast {
+     gap: 0.8rem !important;
+   }
+
+   /* Wrapper Card on dark background */
+   .index .wrapper {
+     width: 28% !important;
+     gap: 0.8rem !important;
+   }
+
+   .index #weekly-forecast #showWeeklyFor {
+     width: 80%;
+   }
+ }
+
+ @media (min-width: 550px) and (max-width:600px) {
+
+   html,
+   body {
+     font-size: 16.7px;
+   }
+
+   .index #temprature,
+   .responsive-feature #temprature {
+     min-height: 225px !important;
+   }
+
+   /* TempDegree margin set  */
+   .index #temprature #tempDegree {
+     margin-top: -0rem;
+   }
+
+   /* Wrapper Card on dark background */
+   .index .wrapper {
+     width: 25% !important;
+   }
+
+   .city-card {
+     padding: 1rem 2rem 1rem 1.5rem !important;
+   }
+
+
+ }

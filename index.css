@@ -1,0 +1,313 @@
+/* ------------------------------------------ ​‌‌‌⁡⁣⁢⁣‍𝗜𝗻𝗱𝗲𝘅⁡​ ------------------------------------------ */
+
+/* ------------------ ⁡⁣⁢⁣​‌‍‌𝗠𝗮𝗶𝗻 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡ ------------------ */
+#main-section {
+  margin-top: 0.1rem;
+  margin-bottom: -0.2rem;
+  gap: 0.2rem;
+}
+
+/* -----------  ⁡⁣⁢⁣​‌‍‌𝗔𝗱𝘃𝗶𝘀𝗼𝗿𝘆 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡   ----------- */
+
+#advisory-section {
+  padding: 0;
+  height: 34% !important;
+}
+
+/* Wrapper */
+#advisory-section .conditionsData {
+  height: 98%;
+  width: 94%;
+  justify-content: space-around !important;
+}
+
+/* EACH CARD */
+#advisory-section .conditionsData .data-index {
+  width: 48%;
+  height: 44%;
+  display: flex;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* ---------------------------
+   ICON DESIGN 
+---------------------------- */
+#advisory-section .conditionsData .solid-icons {
+  width: 20%;
+  height: 78%;
+  margin-left: 0.6rem;
+  background: rgba(0, 140, 255, 0.15);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 140, 255, 0.25);
+  box-shadow: 0 0 8px rgba(0, 140, 255, 0.3);
+}
+
+/* solid-icon i  */
+#advisory-section .conditionsData .solid-icons i {
+  font-size: 1.2rem;
+}
+
+/* ---------------------------
+   CARD STYLES
+---------------------------- */
+#advisory-section .card-desing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+}
+
+/* ---------------------------
+   TEXT STYLES
+---------------------------- */
+/* Card title  */
+#advisory-section .card-title { 
+  font-weight: 800 !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  text-shadow:
+    2px 0.4px 0.4px #1a3332;
+  -webkit-text-stroke: 0.1px rgb(1, 128, 182);
+}
+
+/* Card main value  */
+#advisory-section .card-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow:
+    1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Card sub  */
+#advisory-section .card-sub {
+  white-space: pre-line;
+  font-size: 0.78rem;
+  margin-top: -1px;
+  color: #bcbcbc;
+  text-shadow:
+    3px 3px 5px rgba(0, 0, 0, 0.164);
+}
+
+/* ///////////////////////////////////////// */
+
+
+/* ---------------- ⁡⁣⁢⁣​‌‍‌𝗔𝗶𝗿 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡ ---------------- */
+
+#air-condition {
+  height: 30% !important;
+}
+
+/* Air condiction section headding  */
+#air-condition #airCon {
+  width: 90%;
+  min-height: 20%;
+  margin-top: 0.312rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Air-condition headding button  */
+#airCon #feature-btn {
+  background: linear-gradient(135deg, #44a3ff, #1f83e6);
+  color: #d8e3f4;
+  border: none;
+  cursor: pointer;
+  padding: 0.288rem 0.575rem;
+  border-radius: 0.525rem;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.35);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+/* Air-condition headding button hover  */
+#airCon #feature-btn:hover {
+  background: linear-gradient(135deg, #59b0ff, #2a8cf0);
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.45);
+}
+
+/* Air-condition headding button active  */
+#airCon #feature-btn:active {
+  background: linear-gradient(135deg, #1f83e6, #1769b7);
+  transform: scale(0.96);
+  box-shadow: 0 1px 3px rgba(0, 123, 255, 0.35);
+}
+
+/* Air-condition Condition Data Box */
+.conditionsData {
+  width: 90%;
+  height: 90%;
+  flex-wrap: wrap;
+}
+
+/* ConditionsData data-index for all divs  */
+.conditionsData .data-index {
+  height: 40%;
+  width: 40%;
+  gap: 0.625rem;
+  justify-content: start;
+}
+
+/* ConditionsData wind and uvIndex div  */
+.padd-left {
+  padding-left: 1.875rem;
+}
+
+/* ConditionsData data-index fa-solid = i  */
+.conditionsData .data-index i {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* CondtionsData solid-icon  */
+#air-condition .conditionsData .solid-icons {
+  margin-bottom: 1.688rem;
+  width: 1.1rem;
+  text-align: center;
+}
+
+/* ConditoinsData data-index p font styling */
+.conditionsData .data-index p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ConditionsData data-index h1 font-size set */
+.conditionsData .data-index h1 {
+  font-size: 1.6rem;
+}
+
+/* -------------------- ⁡⁣⁢⁣​‌‍‌𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗿𝗶𝗴𝗵𝘁​⁡ ---------------------- */
+.index #container-right {
+  padding-top: 0.5rem;
+  gap: 0.3rem;
+}
+
+/* ⁡⁣⁣⁢𝗠𝗔𝗜𝗡 𝗙𝗢𝗥𝗘𝗖𝗔𝗦𝗧 𝗔𝗥𝗘𝗔⁡ */
+.index #forecast {
+  height: auto !important;
+  width: 100%;
+  gap: 0.8rem !important;
+  padding: 0rem !important;
+  border-radius: 1rem;
+}
+
+/* Show-forecast hedding  */
+.index #today-for {
+  padding-top: 0.6rem;
+}
+
+/* Show-forecast section  */
+.index #showForecast {
+  flex-wrap: wrap !important;
+  gap: 0.6rem !important;
+  height: auto !important;
+  padding: 0rem !important;
+}
+
+/* Wraper cards  */
+.index .wrapper {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.7rem 0 !important;
+  border-radius: 1rem;
+  width: 27% !important;
+
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35),
+    inset 0 0 6px rgba(255, 255, 255, 0.03);
+
+  transition: all 0.28s ease;
+  transform: translateY(0);
+}
+
+.index .wrapper h2 {
+  font-size: 1.4rem;
+}
+
+/* Wraper cards Hover – dark mode */
+.index .wrapper:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px) scale(1.015);
+
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.38),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Wraper card Time text */
+.index .wrapper p {
+  font-size: 1rem;
+}
+
+/* Braker in forecast & weekly-forecast section */
+.braker {
+  height: 4px;
+  width: 100%;
+  margin: 1rem 0px;
+  background: linear-gradient(to right,
+      rgba(8, 24, 49, 0.95),
+      rgba(0, 33, 84, 0.95),
+      rgba(0, 14, 34, 0.95));
+
+  background-size: 300% 100%;
+  animation: flowGradient 6s linear infinite;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 10px rgb(13, 49, 103);
+}
+
+/* Smooth Flow Animation on braker */
+@keyframes flowGradient {
+  0% {
+    background-position: 0% 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0% 0;
+  }
+}
+
+/* -------------- ⁡⁣⁢⁣𝗪𝗲𝗲𝗸𝗹𝘆 𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁⁡ ------------- */
+.index #weekly-forecast {
+  padding: 0px !important;
+}
+
+/* Weekly-forecast hedding & forecast headding */
+.index #wf-heading,
+#today-for {
+  text-align: left;
+  width: 90% !important;
+  font-size: 0.85rem !important;
+  font-weight: 600;
+}
+
+/* Weekly-forecast headding padding set  */
+.index #wf-heading {
+  padding: 0 !important;
+}
+
+/* Show-weekly-forecast section  */
+.index #container-right #showWeeklyFor {
+  gap: 0.1rem !important;
+  padding-top: 0.4rem;
+}
+
+/* //////////////////////////////////////////////////////////////////// */

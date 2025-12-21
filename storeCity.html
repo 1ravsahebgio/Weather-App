@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <!-- Font Aswome cdnjs  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="storeCity.css" />
+  <link rel="stylesheet" href="largScreen.css">
+  <link rel="stylesheet" href="unityResponsive.css">
+  <link rel="stylesheet" href="mediumScreen.css">
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="smScreen.css">
+</head>
+
+<body>
+  <div class="parent-container flex-center storeCity">
+    <section id="first-container" class="flex-center">
+      <section id="column-section" class="flex-center jus-start flex-col secondary-bg">
+        <div id="upperDiv" class="flex-center hidden">
+          <div id="tempImge">
+            <img src="https://assets.api.uizard.io/api/cdn/stream/d0bb0968-406e-4014-b9ab-080788e9d44b.png"
+              alt="TempUmbrella" />
+          </div>
+        </div>
+        <section id="lowerDiv" class="gray-light flex-center flex-col">
+          <div id="homeIcon" title="Weather" class="flex-col">
+            <i class="fas fa-cloud-sun-rain"></i>
+            <p>Weather</p>
+          </div>
+          <div id="cityIcon" title="Cities" class="flex-col">
+            <i class="fa-solid fa-list-ul">‌</i>
+            <p>Cities</p>
+          </div>
+          <div id="mapIcon" title="Map" class="flex-col">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Map</p>
+          </div>
+          <div id="settingIcon" title="Setting" class="flex-col">
+            <i class="fa-solid fa-sliders"></i>
+            <p>Settings</p>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section id="second-container" class="flex-center space-betw">
+      <section id="container-left" class="flex-center flex-col space-betw">
+        <div id="input-row" class="flex-center jus-start secondary-bg">
+          <input type="text" class="secondary-bg" placeholder="Search for cities" title="Search for cities"
+            id="inputData" spellcheck="false" autocomplete="off" required />
+          <div id="search" class="flex-center" title="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <!-- City List Section  -->
+        <section id="listCity" class="flex-center flex-col"></section>
+      </section>
+
+      <section id="container-right" class="secondary-bg flex-center flex-col">
+        <section id="temprature" class="mainContent flex-center space-betw">
+          <div class="first1 flex-center flex-col">
+            <div id="defaultCity" class="flex-center align-start flex-col">
+              <span id="DefaultCityName"></span>
+              <span id="cRain" class="cool-gray"></span>
+            </div>
+            <div id="tempDegree">
+              <span id="degree"></span>
+            </div>
+          </div>
+          <div id="tempContent">
+            <img src="https://assets.api.uizard.io/api/cdn/stream/e555eccb-fbe4-4a3c-8917-933a41798140.png"
+              id="tempIcon" alt="Content" />
+          </div>
+        </section>
+
+        <hr class="border-bottom topborder" />
+
+        <section id="forecast" class="mainContent flex-center flex-col">
+          <div id="today-for">
+            <p class="cool-gray">TODAY'S FORECAST</p>
+          </div>
+          <div id="showForecast" class="flex-center">
+            <div id="sixAm" class="wrapper">
+              <p>6:00 AM</p>
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Partly Cloudy" />
+              <h2>21°</h2>
+            </div>
+            <div class="rightB"></div>
+            <div id="nineAm" class="wrapper">
+              <p>9:00 AM</p>
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Partly Cloudy" />
+              <h2>24°</h2>
+            </div>
+            <div class="rightB"></div>
+            <div id="twelvePm" class="wrapper">
+              <p>12:00 PM</p>
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Sunny" />
+              <h2>29°</h2>
+            </div>
+          </div>
+        </section>
+
+        <hr class="border-bottom" />
+
+        <section id="weekly-forecast" class="flex-center jus-start flex-col">
+          <section id="wf-heading" class="cool-gray">
+            <p>UPCOMING DAYS FORECAST</p>
+          </section>
+          <section id="showWeeklyFor" class="flex-center flex-col"></section>
+        </section>
+      </section>
+    </section>
+  </div>
+
+  <script src="storeCity.js" type="module" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+/* -----------------------------------------------------  ​‌‌‌⁡⁣⁢⁣‍𝗙𝗲𝗮𝘁𝘂𝗿𝗲⁡​   ----------------------------------------------------- */
+
+/* ------------------- ​‌‍‌⁡⁣⁢⁣𝗧𝗲𝗺𝗽𝗿𝗮𝘁𝘂𝗿𝗲 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​ ------------------- */
+
+#temprature{
+  height: 36% !important;
+}
+
+
+/* ----------- ​‌‍‌⁡⁣⁢⁣𝗪𝗲𝗮𝘁𝗵𝗲𝗿 𝗠𝗲𝘁𝗿𝗶𝗰 𝗰𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​ ---------- */
+#weatherMetrics {
+  width: 100%;
+  height: auto !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+/* Metric cards */
+.metricCard {
+  width: 49%;
+  background-color: rgb(32, 43, 59);
+  border-radius: 1rem;
+  padding: 0.7rem 1.25rem;
+}
+
+/* metric wraper bitween icon & text  */
+.metricWrap {
+  display: flex;
+  gap: 0.58rem;
+  padding-left: 0.312rem;
+}
+
+/* Metric info */
+.metricInfo {
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: column;
+}
+
+/* metric wrap solid icon  */
+.metricWrap i {
+  margin-top: 0.125rem;
+  width: 1.4rem;
+}
+
+/* metric wrap p font style set  */
+.metricInfo p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.metricInfo h3{
+  font-size: 1.1rem;
+}
+
+/*  ------------------------ ​‌‍‌⁡⁣⁢⁣𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗥𝗶𝗴𝗵𝘁⁡​ ----------------------- */
+#container-right {
+  height: 96%;
+  width: 33%;
+  gap: 0.6rem;
+  align-self: flex-end;
+}
+
+/* ---------------- ​‌‍‌‍⁡⁣⁢⁣𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​ ---------------- */
+#forecast {
+  width: 100%;
+  gap: 1rem !important;
+  padding: 1.462rem 0rem 1.562rem 0rem;
+  border-radius: 1.25rem;
+}
+
+/* ---------------- ​‌‍‌‍⁡⁣⁢⁣𝗪𝗲𝗲𝗸𝗹𝘆 𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​ ---------------- */
+#weekly-forecast {
+  height: 62% !important;
+  border-radius: 1.25rem;
+  padding-top: 0.4rem !important;
+}
+
+/* Show-weekly forecast height set  */
+#weekly-forecast #showWeeklyFor {
+  height: 70%; 
+}
+
+/*  -------------------------- ​‌‍‌⁡⁣⁢⁣𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​ ----------------------  */
+/* container */
+#premiumAnim {
+  width: 40px;
+  height: 40px;
+  margin: 4px auto 0;
+  position: relative;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.18), transparent 55%),
+    radial-gradient(circle at 70% 70%, rgba(0, 200, 255, 0.18), transparent 55%),
+    #050816;
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.8),
+    0 0 14px rgba(0, 120, 255, 0.4);
+  animation: atmPulse 4s ease-in-out infinite;
+}
+
+#premiumAnim::before,
+#premiumAnim::after,
+#premiumAnim div {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+}
+
+#premiumAnim::before {
+  inset: -4px;
+  border-image: linear-gradient(135deg, #00d0ff, #007bff) 1;
+  opacity: 0.9;
+  animation: orbitOuter 1.2s linear infinite;
+}
+
+#premiumAnim::after {
+  inset: 6px;
+  border-image: linear-gradient(135deg, #ffde6b, #ff9a3c) 1;
+  opacity: 0.8;
+  animation: orbitMid 1.2s linear infinite reverse;
+}
+
+#premiumAnim div {
+  inset: 16px;
+  border: 1px solid rgba(255, 0, 150, 0.55);
+  box-shadow: 0 0 6px rgba(255, 0, 150, 0.6);
+  animation: orbitInner 0.7s linear infinite;
+}
+
+@keyframes atmPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+@keyframes orbitOuter {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitMid {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitInner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
