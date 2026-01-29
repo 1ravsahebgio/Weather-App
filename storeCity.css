@@ -3,25 +3,24 @@
 }
 
 #temprature {
-  width: 100% !important;
+  width: 100%;
   margin-bottom: -0.938rem;
 }
 
 #temprature #tempContent img {
-  width: 5.625rem !important;
-  height: 5.625rem !important;
+  width: 5.625rem;
+  height: 5.625rem;
 }
 
 #tempContent.sunny {
-  filter: drop-shadow(0 0 5px rgba(255, 190, 0, 0.5))
-    drop-shadow(0 0 20px rgba(255, 170, 0, 0.4))
-    drop-shadow(0 0 20px rgba(255, 150, 0, 0.4));
+  filter: drop-shadow(0 0 5px rgba(255, 190, 0, 0.5)) drop-shadow(0 0 20px rgba(255, 170, 0, 0.4)) drop-shadow(0 0 20px rgba(255, 150, 0, 0.4));
 }
 
-#DefaultCityName,
-#tempDegree {
-  font-size: 2.2rem !important;
+#defaultCity #DefaultCityName,
+#container-right #tempDegree {
+  font-size: 2.2rem;
 }
+
 /* Chance of rain font size  */
 #temprature #defaultCity #cRain {
   font-size: 0.85rem;
@@ -29,38 +28,32 @@
 }
 
 #tempDegree {
-  margin-top: -0.312rem !important;
+  margin-top: -.312rem;
 }
 
 /* Forecast Section  */
 #forecast {
-  width: 92% !important;
-  gap: 1rem !important;
-}
-
-#today-for {
-  width: 94% !important;
+  width: 100%;
+  gap: 1rem;
 }
 
 #weekly-forecast {
-  min-height: 40% !important;
   gap: 0.35rem;
-  justify-content: flex-start !important;
 }
 
-#wf-heading {
-  padding: 0 !important;
+#container-right #today-for,
+#container-right #wf-heading {
+  width: 85%;
 }
 
 #container-right {
   height: 100%;
-  border-radius: 0% !important;
   gap: 0.938rem;
   align-self: flex-end;
 }
 
-.foreCard {
-  width: 90% !important;
+#showWeeklyFor .foreCard {
+  width: 92%; 
 }
 
 .border-bottom {
@@ -71,8 +64,8 @@
   border-radius: 2px;
 }
 
-.bottomB{
-  width: 97% !important;
+#showWeeklyFor .bottomB {
+  width: 95%;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -83,7 +76,7 @@
   margin-top: 0.625rem;
   width: 100%;
   height: 100%;
-  justify-content: start !important;
+  justify-content: start;
   gap: 0.625rem;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -182,7 +175,7 @@
   color: #fff;
   border: none;
   border-radius: 0.938rem;
-  height: 100% !important;
+  height: 100%;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -191,46 +184,39 @@
 @keyframes hyperNovaDropVanish {
   0% {
     opacity: 1;
-    transform: perspective(50rem) rotateY(0deg) rotateX(0deg) translateY(0)
-      scale(1);
+    transform: perspective(50rem) rotateY(0deg) rotateX(0deg) translateY(0) scale(1);
     filter: blur(0);
   }
 
   10% {
-    transform: perspective(50rem) rotateY(6deg) rotateX(-4deg) translateY(-5%)
-      scale(1.05);
+    transform: perspective(50rem) rotateY(6deg) rotateX(-4deg) translateY(-5%) scale(1.05);
   }
 
   25% {
-    transform: perspective(50rem) rotateY(-6deg) rotateX(5deg) translateY(5%)
-      scale(0.97);
+    transform: perspective(50rem) rotateY(-6deg) rotateX(5deg) translateY(5%) scale(0.97);
     filter: blur(0.025rem);
   }
 
   45% {
-    transform: perspective(50rem) rotateY(8deg) rotateX(-6deg) translateY(-10%)
-      scale(1.03);
+    transform: perspective(50rem) rotateY(8deg) rotateX(-6deg) translateY(-10%) scale(1.03);
     opacity: 0.9;
     filter: blur(0.05rem);
   }
 
   65% {
-    transform: perspective(50rem) rotateY(-12deg) rotateX(8deg) translateY(10%)
-      scale(0.93);
+    transform: perspective(50rem) rotateY(-12deg) rotateX(8deg) translateY(10%) scale(0.93);
     opacity: 0.7;
     filter: blur(0.062rem);
   }
 
   80% {
-    transform: perspective(50rem) rotateY(15deg) rotateX(-10deg) translateY(30%)
-      scale(0.85);
+    transform: perspective(50rem) rotateY(15deg) rotateX(-10deg) translateY(30%) scale(0.85);
     opacity: 0.5;
     filter: blur(0.113rem);
   }
 
   100% {
-    transform: perspective(50rem) rotateY(25deg) rotateX(-15deg) translateY(80%)
-      scale(0.75);
+    transform: perspective(50rem) rotateY(25deg) rotateX(-15deg) translateY(80%) scale(0.75);
     opacity: 0;
     filter: blur(0.188rem);
   }

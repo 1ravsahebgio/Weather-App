@@ -8,17 +8,16 @@
   html,
   body {
     font-size: 15px;
-  }  
-     
+  }
+
   /* Temprature Section  */
-  .index #temprature,
-  .responsive-feature #temprature {
-    min-height: 170px !important;
+  .parent-container #temprature {
+    min-height: 170px;
   }
 
   #temprature #tempContent img {
-    height: 4.5rem !important;
-    width: 4.5rem !important;
+    height: 4.5rem;
+    width: 4.5rem;
   }
 
   #main-section {
@@ -29,7 +28,7 @@
     margin-top: 0.7rem;
   }
 
-  
+
   /* ------------------------------------------------------------------------- 
                                   ⁡⁣⁣⁢​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​⁡
   -------------------------------------------------------------------------  */
@@ -38,7 +37,7 @@
                                   ⁡⁣⁢⁣​‌‍‌𝗔𝗱𝘃𝗶𝘀𝗼𝗿𝘆 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡
   -------------------------------------------------------------------------  */
   #advisory-section {
-    padding: 0.7rem 0px !important;
+    padding: .8rem 0px;
   }
 
   /* Wrapper condition data */
@@ -85,17 +84,17 @@
 
   /* Air - Condition Section padding & gap set  */
   #air-condition {
-    padding: 0.7rem 0 1.2rem 0 !important;
+    padding: .7rem 0 1.2rem 0;
   }
 
   /* Air - Condition condition data  */
   .conditionsData {
-    width: 92% !important;
+    width: 92%;
   }
 
   /* data-index h1 font size set  */
-  .data-index h1 {
-    font-size: 1.3rem !important;
+  #air-condition .data-index h1 {
+    font-size: 1.3rem;
     margin-top: 0.3rem;
   }
 
@@ -106,13 +105,13 @@
   /* ------------------------------------------------------------------------- 
                                    ​‌‍‌⁡⁣⁢⁣𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
   -------------------------------------------------------------------------  */
-  .index #showForecast {
-    gap: 0.5rem !important;
+  .index #forecast #showForecast {
+    gap: .5rem;
   }
 
   /* Wrapper Card on dark background */
-  .index .wrapper {
-    padding: 0.7rem 0 !important;
+  .index #showForecast .wrapper {
+    padding: .7rem 0;
   }
 
   /* Hover – wrapper dark mode feel */
@@ -130,7 +129,7 @@
   -------------------------------------------------------------------------  */
   /* City-wrapper active city left  */
   .city-wrapper.active .city-left {
-    gap: 1rem !important;
+    gap: 1rem;
   }
 
   /* ------------------------------------------------------------------------- 
@@ -143,10 +142,6 @@
   /* Subscribe Button width set  */
   .subscribe-btn {
     width: 75%;
-  }
-
-  .remove-btn {
-    min-height: 63px !important;
   }
 
   /* ------------------------------------------------------------------------- 
@@ -181,13 +176,14 @@
     font-size: 14px;
   }
 
-  .remove-btn {
-    min-height: 58px !important;
+  #listCity .remove-btn {
+    min-height: 58px;
   }
 
 }
 
 @media (max-width: 300px) {
+
   html,
   body {
     font-size: 13px;

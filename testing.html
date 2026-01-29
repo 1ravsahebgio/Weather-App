@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Weather App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #3b82f6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg) 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text);
+        }
+
+        .weather-app {
+            max-width: 400px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .app-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 30px 25px;
+            text-align: center;
+        }
+
+        .location {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Current Weather */
+        .current-weather {
+            padding: 30px 25px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .temperature {
+            font-size: 4rem;
+            font-weight: 300;
+            margin: 20px 0;
+            color: var(--text);
+        }
+
+        .weather-desc {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Professional Weather Icons */
+        .weather-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        /* Sun Icon */
+        .icon-sun {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .sun-core {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #fbbf24 0%, #f59e0b 100%);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: sunPulse 3s ease-in-out infinite;
+            box-shadow: 0 0 20px #fbbf24;
+        }
+
+        .sun-ray {
+            position: absolute;
+            background: #fbbf24;
+            width: 3px;
+            height: 25px;
+            border-radius: 2px;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+        }
+
+        .ray1 { transform: translate(-50%, -50%) rotate(0deg) translateY(-35px); }
+        .ray2 { transform: translate(-50%, -50%) rotate(45deg) translateY(-35px); }
+        .ray3 { transform: translate(-50%, -50%) rotate(90deg) translateY(-35px); }
+        .ray4 { transform: translate(-50%, -50%) rotate(135deg) translateY(-35px); }
+
+        /* Cloud Icon */
+        .icon-cloud {
+            position: relative;
+            width: 100px;
+            height: 60px;
+            margin: 0 auto;
+        }
+
+        .cloud-base {
+            width: 80px;
+            height: 40px;
+            background: #e5e7eb;
+            border-radius: 40px;
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            animation: cloudFloat 4s ease-in-out infinite;
+        }
+
+        .cloud-top {
+            width: 50px;
+            height: 50px;
+            background: #f8fafc;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        /* Rain Icon */
+        .icon-rain {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+        .rain-cloud {
+            width: 70px;
+            height: 35px;
+            background: #94a3b8;
+            border-radius: 35px;
+            position: absolute;
+            top: 15px;
+            left: 5px;
+        }
+
+        .rain-drop {
+            position: absolute;
+            width: 3px;
+            height: 12px;
+            background: #3b82f6;
+            border-radius: 2px;
+            animation: rainFall 1.5s linear infinite;
+        }
+
+        .drop1 { left: 20px; top: 50px; animation-delay: 0s; }
+        .drop2 { left: 35px; top: 50px; animation-delay: 0.2s; }
+        .drop3 { left: 50px; top: 50px; animation-delay: 0.4s; }
+
+        /* Weather Details */
+        .weather-details {
+            padding: 25px;
+            background: var(--bg);
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .detail-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .detail-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .detail-value {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        /* Animations */
+        @keyframes sunPulse {
+            0%, 100% { 
+                transform: translate(-50%, -50%) scale(1);
+                box-shadow: 0 0 20px #fbbf24;
+            }
+            50% { 
+                transform: translate(-50%, -50%) scale(1.1);
+                box-shadow: 0 0 30px #fbbf24;
+            }
+        }
+
+        @keyframes cloudFloat {
+            0%, 100% { transform: translateX(0px); }
+            50% { transform: translateX(5px); }
+        }
+
+        @keyframes rainFall {
+            0% { 
+                transform: translateY(0px);
+                opacity: 0;
+            }
+            50% { 
+                opacity: 1;
+            }
+            100% { 
+                transform: translateY(30px);
+                opacity: 0;
+            }
+        }
+
+        /* Footer */
+        .app-footer {
+            padding: 20px;
+            text-align: center;
+            background: var(--card-bg);
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .refresh-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .refresh-btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-app">
+        <!-- Header -->
+        <div class="app-header">
+            <div class="location">New York, NY</div>
+            <div class="date">Monday, December 16, 2024</div>
+        </div>
+
+        <!-- Current Weather -->
+        <div class="current-weather">
+            <!-- Sunny Icon -->
+            <div class="weather-icon">
+                <div class="icon-sun">
+                    <div class="sun-core"></div>
+                    <div class="sun-ray ray1"></div>
+                    <div class="sun-ray ray2"></div>
+                    <div class="sun-ray ray3"></div>
+                    <div class="sun-ray ray4"></div>
+                </div>
+            </div>
+            
+            <div class="temperature">23°</div>
+            <div class="weather-desc">Sunny</div>
+            <div class="high-low">H: 25° L: 18°</div>
+        </div>
+
+        <!-- Weather Details -->
+        <div class="weather-details">
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="detail-label">Humidity</div>
+                    <div class="detail-value">65%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Wind</div>
+                    <div class="detail-value">12 km/h</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Pressure</div>
+                    <div class="detail-value">1015 hPa</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">UV Index</div>
+                    <div class="detail-value">4</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="app-footer">
+            <button class="refresh-btn">Refresh Data</button>
+        </div>
+    </div>
+
+    <script>
+        // Simple animation toggle for demo
+        document.querySelector('.refresh-btn').addEventListener('click', function() {
+            this.textContent = 'Refreshing...';
+            setTimeout(() => {
+                this.textContent = 'Refresh Data';
+                // In real app, here you'd fetch new weather data
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

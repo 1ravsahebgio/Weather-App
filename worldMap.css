@@ -1,15 +1,8 @@
 /* World Map Page Specific Styles */
 #worldMap {
-  background-color: rgb(11, 19, 30);
   margin-top: 0.625rem;
   width: 100%;
-  height: 100%;  
-  justify-content: start !important; 
-  gap: 0.625rem;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  height: 100%;
 }
 
 /* Scrollbar hide */
@@ -35,26 +28,26 @@
 
 /* Leaflet container */
 .leaflet-container {
-  background: #ffffff !important;
-  font-family: "Poppins", "Inter", "Nunito Sans", sans-serif !important;
+  background: #ffffff;
+  font-family: "Poppins", "Inter", "Nunito Sans", sans-serif;
 }
 
 /* Popup Styling */
 .leaflet-popup-content-wrapper {
-  background: #1a2537 !important;
-  color: #c4cad3 !important;
-  border-radius: 0.75rem !important;
-  box-shadow: 0 0.25rem 0.938rem rgba(0, 0, 0, 0.3) !important;
+  background: #1a2537;
+  color: #c4cad3;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.938rem rgba(0, 0, 0, 0.3);
 }
 
 .leaflet-popup-tip {
-  background: #1a2537 !important;
+  background: #1a2537;
 }
 
 .leaflet-popup-content {
-  margin: 0.75rem 0.938rem !important;
-  font-size: 0.9rem !important;
-  line-height: 1.4 !important;
+  margin: 0.75rem 0.938rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 /* Marker Styling */
@@ -113,27 +106,23 @@
 
 /* Map Controls */
 .leaflet-control-zoom a {
-  background: #ffffff !important;
-  color: #333 !important;
-  border: 0.062rem solid #ccc !important;
-  border-radius: 0.5rem !important;
+  color: #333;
+  border: 0.062rem solid #ccc;
+  border-radius: 0.4rem;
 }
 
 .leaflet-control-zoom a:hover {
-  background: #f0f0f0 !important;
+  background: #f0f0f0;
 }
 
+/* brand logo  */
 .leaflet-control-attribution {
-  background: rgba(255, 255, 255, 0.9) !important;
-  color: #666 !important;
-  font-size: 0.7rem !important;
+  opacity: 0;
 }
 
-.leaflet-control-attribution a {
-  color: #44a3ff !important;
-}
 /* /////////////////////////////////////////////////////////// */
-/* Cities List */  
+
+/* Cities List */
 .city-wrapper.active .city-card {
   width: 80%;
   padding: 0.625rem 0.85rem;
@@ -178,8 +167,8 @@
 
 /* User Location Marker */
 .user-location-marker {
-  background: transparent !important;
-  border: none !important;
+  background: transparent;
+  border: none;
 }
 
 .user-location {
@@ -192,4 +181,3 @@
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////// */
- 

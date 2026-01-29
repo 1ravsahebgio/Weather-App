@@ -1,44 +1,44 @@
 /* -------------------------------------------------------------
                       ⁡⁣⁢⁣​‌‌‌𝗠𝗲𝗱𝗶𝘂𝗺 𝗦𝗰𝗿𝗲𝗲𝗻 ​⁡
 --------------------------------------------------------------- */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 1000px) {
 
-    html,
-    body {
-        font-size: 18px;
-        background-color: rgb(11, 19, 30);
+    /* ​‌‍‌⁡⁢⁢⁣𝗛𝗧𝗠𝗟 & 𝗕𝗢𝗗𝗬⁡​  */
+    html {
+        font-size: 17px;
     }
 
+    /* ⁡⁣⁢⁣​‌‍‌𝗣𝗮𝗿𝗲𝗻𝘁 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿​⁡  */
     .parent-container {
-        justify-content: end;
+        justify-content: center;
+        gap: min(2.7%, max(0%, 2.7% + (100vw - 600px) * -0.02));
     }
 
-    .storeCity #container-right,
-    .responsive-feature #container-right {
-        display: none !important;
+    /* Container Left, Right height set  */
+    .parent-container #container-left,
+    .parent-container #container-right {
+        height: auto;
     }
 
     /* ​‌‍‌⁡⁣⁢⁣𝗙𝗶𝗿𝘀𝘁 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​  */
     #first-container {
-        position: fixed;
-        /* left: clamp(2.7%, 2.7%, 100px); */
-        right: 83%;
-        top: 50%;
-        transform: translateY(-50%);
         width: 89px;
-        height: clamp(95.9vh, 97vh, 97.5vh);
+        height: 96.5%;
     }
 
-    /* First Container column-section  */
-    #column-section {
-        border-radius: 1rem !important;
-        justify-content: start !important;
+    #upperDiv {
+        height: clamp(0px, 10%, 90px);
     }
 
+    /* Lower div gap set  */
     #lowerDiv {
-        gap: clamp(3vh, 4vh, 5vh);
+        gap: clamp(0px, 4vh, 70px);
+
     }
 
+    /* ---------------------------
+   Font Size 
+---------------------------- */
     #lowerDiv i {
         font-size: 1rem;
     }
@@ -49,11 +49,12 @@
 
     /* ​‌‍‌⁡⁣⁢⁣𝗦𝗲𝗰𝗼𝗻𝗱 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​  */
     #second-container {
-        width: 77.3% !important;
+        width: 78%;
+        height: 96.5%;
+        align-content: flex-start;
         overflow-y: scroll;
         scrollbar-width: none;
         scroll-behavior: smooth;
-        margin-right: clamp(2.7%, 2.7%, 3%);
     }
 
     /* Input - row section  */
@@ -61,31 +62,10 @@
         height: 2.7rem;
     }
 
-    /* input-row = input  */
-    #input-row input {
-        height: 2.7rem;
-        font-size: 1rem;
-        padding-left: 0.938rem;
-        width: 88%;
-    }
-
     /* Input Search fa-solid Icon Medium */
     #input-row #search .fa-solid:active {
         font-size: medium;
     }
-
-    /* input-row search box  */
-    #search {
-        height: 2.7rem;
-        width: 12% !important;
-    }
-
-    /* ⁡⁣⁢⁣​‌‍‌𝗥𝗶𝗴𝗵𝘁 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗗𝗮𝘁𝗮​⁡ */
-    .index #second-container #container-right,
-    .responsive-setting #second-container #container-right {
-        margin-bottom: 1rem !important;
-    }
-
 
     /* ------------------------------------------------------------------------- 
                                   ⁡⁣⁣⁢​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​⁡
@@ -94,39 +74,36 @@
                              ​‌‍‌⁡⁣⁢⁣𝗧𝗲𝗺𝗽𝗿𝗮𝘁𝘂𝗿𝗲 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
   -------------------------------------------------------------------------  */
     /* Temprature - Sectoin height set  */
-    .index #temprature,
-    .responsive-feature #temprature {
-        min-height: 240px !important;
+    .parent-container #temprature {
+        min-height: clamp(240px, 240px + (100vw - 700px) * 0.07, 247px);
+        overflow: hidden;
     }
 
     /* for Index.html and features.html  */
-    .first1 {
-        gap: 3rem !important;
+    #temprature .first1 {
+        gap: 3rem;
     }
-
-    /* ------------------------------------------------------------------------- 
-                                  ⁡⁣⁢⁣​‌‍‌𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡
-  -------------------------------------------------------------------------  */
 
     /* ------------------------------------------------------------------------- 
                                   ⁡⁣⁢⁣​‌‍‌𝗔𝗱𝘃𝗶𝘀𝗼𝗿𝘆 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡
   -------------------------------------------------------------------------  */
-    #advisory-section .conditionsData {
-        min-width: 92%;
-        gap: .6rem;
-    }
 
+    /* Condiction-data data-index  */
     #advisory-section .conditionsData .data-index {
         gap: 1.2rem;
+    }
+
+    /* CondictionData data-index */
+    .parent-container #advisory-section .conditionsData .data-index {
+        padding: clamp(0.65rem, 0.65rem + (100vw - 600px) * 0.0085, 0.7rem) .2rem;
     }
 
     /* ---------------------------
    ICON DESIGN 
 ---------------------------- */
     #advisory-section .conditionsData .solid-icons {
-        margin-left: 0.8rem;
-        width: 23%;
-        padding: 1.4rem 0.5rem;
+        padding: clamp(1.33rem, 1.33rem + (100vw - 600px) * 0.0085, 24.5px) 0rem;
+        width: min(25.3%, 120px);
     }
 
     /* solid-icon i  */
@@ -137,46 +114,39 @@
     /* ---------------------------
    TEXT STYLES
 ---------------------------- */
-    /* Card title  */
-    #advisory-section .card-title {
-        font-size: 0.88rem !important;
-    }
-
     /* Card main value  */
     #advisory-section .card-value {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
     }
 
     /* Card sub  */
     #advisory-section .card-sub {
-        font-size: 0.85rem;
+        font-size: 0.80rem;
     }
 
     /* ------------------------------------------------------------------------- 
                                   ​‌‍‌‍⁡⁣⁢⁣𝗔𝗶𝗿 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
   -------------------------------------------------------------------------  */
+    /* padding & gap set  */
     #air-condition {
-        padding: 1.2rem 0 !important;
-        gap: 1.8rem;
+        padding: 1.3rem clamp(1%, calc(1% + (100vw - 749px) * 0.18), 15px);
+        gap: 1.7rem;
     }
 
-    #air-condition #airCon {
-        font-size: 0.9rem;
+    #forecast #today-for,
+    #weekly-forecast #wf-heading {
+        padding-left: clamp(.5%, calc(.5% + (100vw - 749px) * 0.18), 14px);
     }
 
-    #air-condition .conditionsData {
-        width: 88% !important;
+    /* Air headding Feature page button  */
+    .index #air-condition #airCon #feature-btn {
+        font-size: .9rem;
     }
 
     /* rain chance & uv index padding set  */
     #rainChance,
     #uvIndex {
-        padding-top: 2.3rem;
-    }
-
-    /* ConditionsData data-index fa-solid = i  */
-    #air-condition .conditionsData .data-index i {
-        font-size: 1.2rem;
+        padding-top: 2.25rem;
     }
 
     /* ConditoinsData data-index p font styling */
@@ -187,72 +157,68 @@
     /* ConditionsData data-index h1 font-size set */
     #air-condition .data-index h1 {
         margin-top: 0.3rem;
-        font-size: 1.7rem;
     }
 
     /* ------------------------------------------------------------------------- 
                                   ⁡⁣⁢⁣​‌‍‌𝗥𝗶𝗴𝗵𝘁 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿​⁡
   -------------------------------------------------------------------------  */
-
+    /* Container Right Padding bottom set  */
     .parent-container #second-container #container-right {
         padding-bottom: 4rem;
+        gap: .8rem;
     }
 
     /* ------------------------------------------------------------------------- 
                                  ⁡⁣⁢⁣​‌‍‌𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡
   -------------------------------------------------------------------------  */
-
+    /* gap set  */
     .index #forecast {
-        gap: 1.4rem !important;
+        gap: 1.1rem;
+        padding-top: .4rem;
     }
 
-    /* Index page Forecast Section Title  */
-    .index #today-for {
-        padding-top: 1rem !important;
-    }
-
+    /* forecast showforecast  */
     .index #forecast #showForecast {
-        gap: 0.8rem !important;
+        gap: clamp(1rem, 1rem + (100vw - 600px) * 0.09, 24px);
+        row-gap: clamp(1.05rem, 1.05rem + (100vw - 600px) * 0.08, 20px);
     }
 
     /* Wrapper Card on dark background */
-    .index .wrapper {
-        width: 130px !important;
-        gap: 1rem;
-        padding: 1.3rem 0 !important;
+    .index #showForecast .wrapper {
+        width: clamp(125px, 125px + (100vw - 600px) * 0.08, 130px);
+        padding: clamp(1.12rem, 1.12rem + (100vw - 700px) * 0.04, 21px) 0;
+        gap: 0.7rem;
     }
 
-    .index .wrapper img,
+    /* wrapper image &  showWeeklyFor image */
+    .index #showForecast .wrapper img,
     #container-right #showWeeklyFor img {
-        height: 3.5rem !important;
-        width: 3.5rem !important;
+        height: 3.4rem;
+        width: 3.4rem;
     }
 
     /* Wrapper Card on p font size set */
     .index .wrapper p {
-        font-size: 1.2rem;
+        font-size: 1.17rem;
     }
 
+    /* index wrapper h2  */
     .index .wrapper h2 {
-        font-size: 1.55rem;
+        font-size: 1.46rem;
     }
 
-    /* Braker height set */
-    .braker {
-        margin: 1.5rem 0;
-    }
-
-    /* titles font size set */
-    /* fore card font size set  */
-    .index #wf-heading,
-    #today-for,
+    /* Headding font size set & minMax */
+    .index #weekly-forecast #wf-heading,
+    #forecast #today-for,
+    .index #air-condition #airCon,
     .foreCard,
     .minMax {
-        font-size: 0.96rem !important;
+        font-size: .95rem;
     }
 
-    .index #showWeeklyFor {
-        width: 80% !important;
+    /* Show weekly forecast  */
+    .index #weekly-forecast #showWeeklyFor {
+        width: 80%;
     }
 
     /* ------------------------------------------------------------------------- 
@@ -264,15 +230,12 @@
   -------------------------------------------------------------------------  */
     /* Store-city Second - Container = Container Left  */
     .storeCity #second-container #container-left {
-        height: 100vh !important;
+        height: 100vh;
     }
 
+    /* List city width  */
     #listCity {
-        width: 95%;
-    }
-
-    #second-container #container-left {
-        justify-content: start;
+        width: 98%;
     }
 
     /* City-wrapper active remove button  */
@@ -286,72 +249,64 @@
     }
 
     /* City Card  */
-    .city-card {
-        padding-top: 0.8rem !important;
-        padding-bottom: 0.8rem !important;
+    #listCity .city-card {
+        padding-top: .8rem;
+        padding-bottom: .8rem;
     }
-
 
     /* ------------------------------------------------------------------------- 
                              ⁡⁢⁣⁣​‌‌‌𝗘𝗻𝗱 𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆​⁡ 
   -------------------------------------------------------------------------  */
 
-    /* ------------------------------------------------------------------------- 
-                                 ⁡⁣⁣⁢​‌‌‌ 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽​⁡
-  -------------------------------------------------------------------------  */
+    /* ----------------------  𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽​⁡ ----------------------  */
     /* Parent Container world Map height set  */
     .world-map #worldMap {
         height: 70vh;
         margin-bottom: 2.4rem;
     }
 
-    /* Parent Container container right  */
-    .world-map #container-right {
-        height: 60vh;
-        padding-bottom: 1rem !important;
-        margin-bottom: 4rem !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* ------------------------------------------------------------------------- 
-                             ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽⁡​
-  -------------------------------------------------------------------------  */
+    /* ---------------------- ​ ‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽⁡​  ----------------------  */
 
 
     /* ------------------------------------------------------------------------- 
                                     ​‌‌‌⁡⁣⁣⁢𝗦𝗲𝘁𝘁𝗶𝗻𝗴⁡​
   -------------------------------------------------------------------------  */
-
+    /* Setting page flex row  */
     .responsive-setting {
         flex-direction: row;
     }
 
+    /* setting page container right  */
     .responsive-setting #second-container #container-right {
         padding-bottom: 0%;
     }
 
-    .r-m {
-        display: none;
+    /* Premimum & singup  */
+    .responsive-setting #container-right section {
+        padding: min(5.3%, 35px) 30px;
     }
 
-    .first {
-        padding-top: 1.6rem;
-        padding-bottom: 1.6rem;
+    /* padding set unit box */
+    .unit-box {
+        padding: clamp(1.5rem, 1.5rem + (100vw - 600px) * 0.03, 34px) 21.25px;
     }
 
-    .premium,
-    .signUp {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+    .premium-features {
+        width: 100%;
     }
 
-    .signUp button {
-        width: 60% !important;
-        margin-top: 0.5rem;
+    .premium-features li {
+        margin-left: 5%;
     }
 
+    .subscribe-btn {
+        width: min(55%, 15rem);
+    }
+
+    /* sign up button  */
+    .signup-btn {
+        width: min(65%, 16.5rem);
+    }
 
     /* ------------------------------------------------------------------------- 
                                 ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗦𝗲𝘁𝘁𝗶𝗻𝗴⁡​
@@ -360,13 +315,10 @@
     /* ------------------------------------------------------------------------- 
                                   ​‌‌‌⁡⁣⁣⁢𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀⁡​
   -------------------------------------------------------------------------  */
-    /* Features Page  */
-    .responsive-feature {
-        min-height: 100vh !important;
-    }
 
+    /* Weather Metric gap  */
     #weatherMetrics {
-        gap: 0.5rem;
+        gap: .5rem;
     }
 
     /* Metric-Card width & padding set  */
@@ -375,18 +327,19 @@
         padding: 1.4rem 0rem 1.3rem 0.9rem;
     }
 
+    /* Metric Card solid icon font size  */
     .metricCard i {
         font-size: 1.17rem;
     }
 
     /* Metric-Card Metric-Info P font size set  */
     .metricInfo p {
-        font-size: 1rem;
+        font-size: .95rem;
     }
 
     /* Metric Card h3 font size set  */
     .metricCard h3 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
     /* ------------------------------------------------------------------------- 
@@ -396,127 +349,216 @@
 
 @media (min-width: 601px) and (max-height: 500px) {
 
+    /* Html  */
     html {
         font-size: 16px;
     }
 
+    /* Column Section justify center  */
     #first-container #column-section {
-        justify-content: center !important;
+        justify-content: center;
+        overflow: auto;
+        scrollbar-width: none;
     }
 
+    /* Upper div display none  */
     #upperDiv {
         display: none;
     }
 
+    /* Coloumn Section Lower div  */
     #lowerDiv {
         justify-content: space-evenly;
+        gap: 20px;
         height: 90%;
     }
 
+    /* LowerDiv div padding  */
     #lowerDiv div {
         padding: 0;
     }
 
+    /* --------------------
+    Font Size
+    ----------------------- */
+    /* Lower Div solid icon  */
     #lowerDiv i {
         font-size: clamp(1rem, 3.2vh, 2.2rem);
     }
 
+    /* Lower div p  */
     #lowerDiv p {
         font-size: clamp(0.8rem, 2.6vh, 1.6rem);
     }
 }
 
-@media (min-width: 700px) and (max-width: 900px) {
+@media (min-width: 700px) and (max-width: 1000px) {
+
+    /* Parent container box shadow */
     .parent-container {
         box-shadow:
             inset 22px 0 35px -25px rgba(80, 150, 255, 0.347),
             inset -22px 0 35px -25px rgba(80, 150, 255, 0.347);
     }
 
-    /* Wrapper Card on dark background */
-    .index .wrapper {
-        width: 135px !important;
-    }
-
-    #first-container {
-        width: 13%;
-        right: 80%;
-    }
-
-    #second-container {
-        width: 75% !important;
-        margin-right: 4.4%;
-    }
-
-    /* Temprature - Sectoin height set  */
-    .index #temprature,
-    .responsive-feature #temprature {
-        min-height: 250px !important;
-    }
-
-
-    .index #weekly-forecast #showWeeklyFor {
-        width: 75% !important;
-    }
-
-    .city-card {
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
-    }
-}
-
-@media (min-width: 750px) and (max-width: 800px) {
-    #second-container {
-        margin-right: 7%;
-        width: 70% !important;
-    }
-
-}
-
-@media (min-width: 800px) and (max-width: 900px) {
-
-    #first-container {
-        width: 12%;
-        right: 79%;
-    }
-
-    #second-container {
-        width: 68% !important;
-        margin-right: 8.5%;
-    }
-
+    /* show forecast width & gap set  */
     .index #forecast #showForecast {
-        width: 90% !important;
-        gap: 0.9rem !important;
+        gap: clamp(1.14rem, 1.14rem + (100vw - 700px) * 0.08, 27px);
+        row-gap: clamp(1.14rem, 1.14rem + (100vw - 700px) * 0.08, 23px);
     }
 
-    .index .wrapper {
-        padding: 1.4rem 0px !important;
+    /* Wrapper Card on dark background */
+    .index #showForecast .wrapper {
+        width: clamp(128px, 128px + (100vw - 700px) * 0.06, 133px);
     }
 
-    .index #forecast #today-for,
-    .index #weekly-forecast #wf-heading {
-        width: 88% !important;
+    /* first container widht set  */
+    #first-container {
+        width: clamp(96px, 96px + (100vw - 900px) * 0.02, 98px);
     }
 
-    .first {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+    /* second container */
+    #second-container {
+        width: min(72.5%, 565px);
     }
+
+    /* City card padding set  */
+    #listCity .city-card {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
 }
 
-@media (min-width: 850px) and (max-width: 900px) {
+@media (min-width: 800px) and (max-width: 1000px) {
 
-    #first-container {
-        width: 11.5%;
-        /* left: 9%; */
+    /* Second container width set */
+    #second-container {
+        width: min(68%, 590px);
     }
 
-    /* #second-container {
-        margin-right: 9%;
-    } */
+    /* show forecast width & gap set  */
+    .index #forecast #showForecast {
+        gap: clamp(1.2rem, 1.2rem + (100vw - 800px) * 0.09, 30px);
+        row-gap: clamp(1.2rem, 1.2rem + (100vw - 800px) * 0.09, 25px);
+    }
 
-    .index .wrapper {
-        width: 138px !important;
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+
+    /* Parent container  */
+    .parent-container {
+        box-shadow: none;
+    }
+
+    /* show forecast width & gap set  */
+    .index #forecast #showForecast {
+        width: 95%;
+        flex-wrap: nowrap;
+        gap: clamp(1rem, 1rem + (100vw - 900px) * 0.07, 23px);
+    }
+
+    .index #showForecast .wrapper {
+        width: clamp(124px, 124px + (100vw - 900px) * 0.07, 132px);
+        padding: clamp(1.11rem, 1.11rem + (100vw - 900px) * 0.03, 20px) 0;
+    }
+
+    .index #showForecast #sixAm {
+        display: none;
+    }
+
+    /* Second container  */
+    #second-container {
+        width: 83.5%;
+    }
+
+    #air-condition,
+    #forecast #today-for,
+    #weekly-forecast #wf-heading {
+        padding-left: 0px;
+    }
+
+    #forecast #today-for {
+        width: 92%;
+    }
+
+    /* Wrapper condition data */
+    #advisory-section .conditionsData {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 96%;
+    }
+
+    /* CondictionData data-index */
+    #main-section #advisory-section .data-index {
+        width: 49%;
+    }
+
+    #advisory-section .conditionsData .solid-icons {
+        padding: 1.3rem 0rem;
+        width: min(26%, 130px);
+    }
+
+    /* ---------------------------
+   TEXT STYLES
+---------------------------- */
+    /* Card title  */
+    #advisory-section .card-title {
+        font-size: .84rem;
+    }
+
+    /* Card main value  */
+    .index #advisory-section .card-value {
+        font-size: 1.03rem;
+    }
+
+    /* foreCard & min temp max temp font size set */
+    .foreCard,
+    #showWeeklyFor .minMax {
+        font-size: 1.03rem;
+    }
+
+
+    /*        ​‌‌‌⁡⁣⁣⁢𝗙𝗲𝗮𝘁𝘂𝗿𝗲 𝗣𝗮𝗴𝗲⁡​          */
+    #weatherMetrics {
+        gap: 1rem;
+    }
+
+    /* Metric cards */
+    .metricCard {
+        width: 48%;
+    }
+
+
+    /* ​‌‌‌⁡⁣⁣⁢     𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗣𝗮𝗴𝗲⁡        ​  */
+
+    .unit-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .unit-group {
+        width: 95%;
+    }
+
+    .premium-features li {
+        margin-left: 20%;
+    }
+
+    #container-right .border-bottom {
+        width: 60%;
+    }
+
+    .sign-desc {
+        width: 48%;
+    }
+
+    .subscribe-btn {
+        width: min(50%, 320px);
+    }
+
+    .signUp .signup-btn {
+        width: min(50%, 260px);
     }
 }

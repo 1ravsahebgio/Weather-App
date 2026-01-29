@@ -41,7 +41,7 @@
             <i class="fa-solid fa-map-location-dot"></i>
             <p>Map</p>
           </div>
-          <div id="settingIcon" title="Setting" class="flex-col">
+          <div id="settingIcon" title="Settings" class="flex-col">
             <i class="fa-solid fa-sliders"></i>
             <p>Settings</p>
           </div>
@@ -62,7 +62,7 @@
           <section class="settings-container">
             <h2 class="settings-title">UNITS</h2>
             <!-- Units Section -->
-            <section class="settings-section first secondary-bg unit-box flex-col">
+            <section class="settings-section unit-box secondary-bg unit-box flex-col">
               <section class="unit-group">
                 <span class="unit-label cool-gray">TEMPERATURE</span>
                 <section class="unit-options">
@@ -90,11 +90,11 @@
                 <span class="unit-label cool-gray">PRESSURE</span>
                 <section class="unit-options">
                   <div class="flex-container flex-center">
-                    <div class="unit-option">InPa</div>
+                    <div class="unit-option">hPa</div>
                     <div class="unit-column"></div>
                     <div class="unit-option">Inches</div>
                     <div class="unit-column"></div>
-                    <div class="unit-option active">HPa</div>
+                    <div class="unit-option active">kPa</div>
                     <div class="unit-column"></div>
                     <div class="unit-option">mm</div>
                   </div>
@@ -143,7 +143,7 @@
               <!-- General Settings Section -->
               <section class="settings-section">
                 <h2 class="settings-title">GENERAL</h2>
-                <div class="general-box secondary-bg">
+                <div class="general-box secondary-bg flex-center flex-col">
                   <section class="toggle-section secondary-bg flex-center space-betw">
                     <div>
                       <div class="toggle-label">12-Hour Time</div>
@@ -153,6 +153,7 @@
                       <span class="slider"></span>
                     </label>
                   </section>
+                  <div class="border-bottom"></div>
                   <section class="toggle-section secondary-bg flex-center space-betw">
                     <div>
                       <div class="toggle-label">Location</div>
@@ -174,16 +175,16 @@
 
       <section id="container-right" class="flex-center flex-col">
         <!-- Premium Section -->
-        <section class="premium secondary-bg">
+        <section class="premium secondary-bg flex-col flex-center">
           <h1 class="headding-setting grayish-blue">Advanced</h1>
           <hr class="border-bottom" />
-          <h2 class="premium-title grayish-blue">Get new experience</h2>
+          <h2 class="premium-title grayish-blue">Unlock premium features</h2>
           <ul class="premium-features">
-            <li class="cool-gray">✓ Ad free</li>
+            <li class="cool-gray">✓ Ad-free</li>
             <li class="cool-gray">✓ Health activities overview</li>
-            <li class="cool-gray">✓ Severe weather notifications</li>
+            <li class="cool-gray">✓ Severe weather alerts</li>
           </ul>
-          <div class="premium-price grayish-blue">$5.99/month</div>
+          <div class="premium-price grayish-blue">$5.99<span class="cool-gray">/month</span></div>
           <button class="subscribe-btn">Subscribe Now</button>
         </section>
 

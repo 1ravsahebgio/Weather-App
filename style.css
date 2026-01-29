@@ -45,12 +45,12 @@ body,
 
 /* Justify-Content Start */
 .jus-start {
-  justify-content: start !important;
+  justify-content: start;
 }
 
 /* Align Items Start  */
 .align-start {
-  align-items: start !important;
+  align-items: start;
 }
 
 /* Flex space between  */
@@ -80,7 +80,7 @@ body,
   width: 90%;
   height: 100vh;
   gap: 0.938rem;
-  scrollbar-width: none !important;
+  scrollbar-width: none;
 }
 
 /*  -------------------------------------------  ​‌‍‌⁡⁣⁢⁣𝗙𝗶r𝘀𝘁 - 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​  -------------------------------------------  */
@@ -95,14 +95,14 @@ body,
   height: 100%;
   width: 100%;
   gap: 1.2rem;
-  border-radius: 0.938rem;
+  border-radius: 1rem;
 }
 
 /* column Upper - Div  */
 #upperDiv {
-  margin-top: 7px;
-  height: 10%;
-  width: 70%;
+  height: clamp(0px, 10%, 100px);
+  width: 100%;
+  margin-top: 8px;
 }
 
 /* Upper div umbrella image  */
@@ -191,7 +191,8 @@ input:focus-visible {
 
 /* Input row  Search button  */
 #input-row #search {
-  width: 6%;
+  /* width: 6%; */
+  width: clamp(0px, 12%, 55px);
   height: 2.5rem;
   border-top-right-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
@@ -232,6 +233,7 @@ input:focus-visible {
 
 #temprature {
   position: relative;
+  user-select: none;
 }
 
 #temprature .tepratureBack {
@@ -240,7 +242,7 @@ input:focus-visible {
   width: 100%;
   border-radius: 1rem;
 }
- 
+
 /* Temprature Section */
 #temprature .first1 {
   gap: 1.7rem;
@@ -256,7 +258,7 @@ input:focus-visible {
 }
 
 /* Temprature default city and temp degree  */
-#temprature #defaultCity #DefaultCityName,
+#defaultCity #DefaultCityName,
 #tempDegree {
   font-size: 2.3rem;
   font-weight: bolder;
@@ -377,7 +379,6 @@ input:focus-visible {
   z-index: 3;
   animation: sunBreath 7s ease-in-out infinite;
   will-change: transform;
-  /* Very important */
   transform-origin: 50% 50%;
 
   /* Glow */
@@ -425,18 +426,21 @@ input:focus-visible {
   border-radius: 1rem;
   overflow-y: auto;
   scrollbar-width: none;
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
 #showForecast .wrapper {
   gap: 0.3rem;
+  user-select: none;
 }
 
 /* Forecast Section  */
 /* Forecast imges */
+#showWeeklyFor img,
 #showForecast img {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 3rem;
+  height: 3rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 /* Show forecast divs  */
@@ -446,13 +450,15 @@ input:focus-visible {
 
 /* h2 styling */
 #showForecast div h2 {
-  padding-top: 0.156rem !important;
-  color: #dde0e4 !important;
+  padding-top: 0.156rem;
+  color: #dde0e4;
+  letter-spacing: -1px;
 }
 
 /* Forecast p styling */
 #forecast #showForecast p {
-  color: #9399a2;
+  color: #b2b8c1;
+  opacity: 0.9;
 }
 
 /* Show Forecast  */
@@ -472,7 +478,7 @@ input:focus-visible {
 
 /* - Removing border */
 #showForecast #ninePm {
-  border: none !important;
+  border: none;
 }
 
 /* ⁡⁣⁢⁣𝗪𝗲𝗲𝗸𝗹𝘆 𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡  */
@@ -484,21 +490,16 @@ input:focus-visible {
 /* Weekly forecast & Today For Headding  */
 #container-right #wf-heading,
 #forecast #today-for {
-  width: 85%;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
-}
-
-/* Weekly forecast headding padding */
-#container-right #wf-heading {
-  padding-top: 1.25rem;
+  width: 90%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.130);
 }
 
 /* Show weekly forecast section  */
 #weekly-forecast #showWeeklyFor {
   width: 85%;
   height: 100%;
-  gap: 0.4rem !important;
 }
 
 /* Fore Cards */
@@ -514,6 +515,7 @@ input:focus-visible {
 /* Imges & Span */
 #showWeeklyFor .imgSpan {
   width: 45%;
+  width: min(45%,280px);
   justify-content: space-around;
 }
 
