@@ -16,14 +16,9 @@
   filter: drop-shadow(0 0 5px rgba(255, 190, 0, 0.5)) drop-shadow(0 0 20px rgba(255, 170, 0, 0.4)) drop-shadow(0 0 20px rgba(255, 150, 0, 0.4));
 }
 
-#defaultCity #DefaultCityName,
-#container-right #tempDegree {
-  font-size: 2.2rem;
-}
-
 /* Chance of rain font size  */
 #temprature #defaultCity #cRain {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #9399a2;
 }
 
@@ -53,7 +48,7 @@
 }
 
 #showWeeklyFor .foreCard {
-  width: 92%; 
+  width: 92%;
 }
 
 .border-bottom {
@@ -96,7 +91,7 @@
   width: 100%;
   transition: all 0.3s ease;
 }
-
+ 
 /* Default: button hidden */
 .city-wrapper .remove-btn {
   width: 0;
@@ -138,6 +133,8 @@
   cursor: pointer;
   width: 100%;
   user-select: none;
+  /* changes  */
+  height: 100%;
 }
 
 .city-left {
@@ -148,25 +145,24 @@
 
 .weather-icon {
   width: 3.438rem;
-  height: 3.438rem;
+  height: auto;
 }
 
 .city-info h3 {
   color: #fff;
-  font-size: 1.312rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
 .city-info p {
   color: #9ba1b3;
-  font-size: 0.938rem;
+  font-size: .91rem;
   margin: 0.125rem 0 0;
 }
 
 .city-temp {
   color: #fff;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.4rem;
 }
 
 /* Remove button */
@@ -234,7 +230,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0, #00ff00);
   text-shadow: 0.125rem 0.125rem 0.25rem rgba(255, 255, 255, 0.253);
   -webkit-text-stroke: #00ff00;

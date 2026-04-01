@@ -191,7 +191,6 @@ export async function getWeather(cityName) {
     }
     if (rain) rain.style.color = !currentIsDay ? "#9399a2" : "rgb(191, 255, 185)";
 
-
     lastDetectedCity = data.location.name;
     lastTemp = Math.floor(data.current.temp_c);
     lastIcon = `https:${data.current.condition.icon}`;

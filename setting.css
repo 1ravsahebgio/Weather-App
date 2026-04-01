@@ -16,6 +16,16 @@
    /* headding for mobaile  */
    .r-m {
      display: none;
+     font-size: 1.75rem;
+     font-weight: 700;
+     letter-spacing: 1px;
+     background: linear-gradient(135deg, #8fb7ff, #dbe7ff);
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin: 1.5rem 0rem -2rem 0rem;
+     padding-left: 0.2rem;
+     user-select: none;
    }
 
    /* ------------  ​‌‌‍⁡⁣⁢⁣‍𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿⁡​ ----------- */
@@ -31,9 +41,9 @@
    /* setting title  */
    .settings-title {
      color: #dde0e4;
-     font-size: 1.05rem;
-     margin: .438rem 0px .438rem 1rem;
+     font-size: 1rem;
      font-weight: 550;
+     margin: .438rem 0px .438rem 1rem;
    }
 
    /* ------------  ⁡⁣⁢⁣​‌‌‍𝗨𝗻𝗶𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡ ----------- */
@@ -48,7 +58,7 @@
    /*  unit headding  */
    .unit-label {
      display: block;
-     font-size: 0.8rem;
+     font-size: .75rem;
      padding-left: 5px;
      font-weight: 600;
      margin-bottom: 0.45rem;
@@ -84,7 +94,7 @@
      padding: 0.42rem 0rem;
      color: #9399a2;
      cursor: pointer;
-     font-size: 0.75rem;
+     font-size: .73rem;
      text-align: center;
      letter-spacing: .3px;
      user-select: none;
@@ -101,9 +111,9 @@
    /* ----------- ⁡⁣⁢⁣​‌‌‍𝗧𝗼𝗴𝗴𝗹𝗲 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡ ---------- */
    /* setting box  */
    #setting-box {
-     padding: 1.3rem 0px 2rem 0px;
+     padding: 1.3rem 0px;
      margin-top: 0.7rem;
-     gap: 2.2rem;
+     gap: 2rem;
    }
 
    /* setting box section  */
@@ -124,12 +134,12 @@
    /* label  */
    .toggle-label {
      color: #d8dde5;
-     font-size: 0.95rem;
+     font-size: .9rem;
    }
 
    /* toggle desc  */
    .toggle-desc {
-     font-size: 0.86rem;
+     font-size: .82rem;
      margin-top: 0.312rem;
    }
 
@@ -187,14 +197,13 @@
    /* .toggle & general box padding  */
    .toggle-box,
    .general-box {
-     padding: 1.2rem 1.3rem;
-     padding: 1.2rem clamp(1.3rem, 1.3rem + (100vw - 900px) * 1, 1.6rem);
+     padding: 1.2rem clamp(1.3rem, calc(1.3rem + (100vw - 900px) * 1), 1.6rem);
      border-radius: 1rem;
    }
 
    /* .general box padding */
    .general-box {
-     padding: 0.6rem  clamp(1.3rem, 1.3rem + (100vw - 900px) * 1, 1.6rem);
+     padding: 0.6rem clamp(1.3rem, calc(1.3rem + (100vw - 900px) * 1), 1.6rem);
    }
 
    /* --------------- ​‌‌‍⁡⁢⁣⁣𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 ​‌‌‍𝗥𝗶𝗴𝗵𝘁⁡​ -------------- */
@@ -228,7 +237,7 @@
 
    /* premium heading  */
    .premium .headding-setting {
-     font-size: 2rem;
+     font-size: 1.95rem;
    }
 
    /* color distributer */
@@ -238,12 +247,12 @@
 
    /* unlock premium feature title  */
    .premium-title {
-     font-size: 1.25rem;
+     font-size: 1.2rem;
    }
 
    /* Features  */
    .premium-features {
-     font-size: 0.9rem;
+     font-size: 0.87rem;
      align-self: flex-start;
      text-align: left;
      list-style: none;
@@ -254,13 +263,13 @@
 
    /* Premium Price  */
    .premium-price {
-     font-size: 1.8rem;
+     font-size: 1.77rem;
      font-weight: bold;
    }
 
    /* month font size   */
    .premium-price span {
-     font-size: 1.3rem;
+     font-size: 1.25rem;
    }
 
    /* --------------- ⁡⁣⁢⁣​‌‌‍𝗦𝗶𝗴𝗻​‌‌‍-𝘂𝗽 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​  -------------- */
@@ -270,12 +279,12 @@
 
    .sign-title {
      color: #d8dde5;
-     font-size: 1.15rem;
+     font-size: 1.12rem;
    }
 
    .sign-desc {
-     width: 70%;
-     font-size: 0.9rem;
+     width: min(70%, 280px);
+     font-size: .87rem;
    }
 
    /* --------------- ⁡⁣⁢⁢​‌‌‍𝗕𝘂𝘁𝘁𝗼𝗻𝘀​⁡ -------------- */
@@ -293,7 +302,7 @@
    /* subscribe btn  */
    .subscribe-btn {
      padding: 0.78rem 1.562rem;
-     font-size: 0.9rem;
+     font-size: .9rem;
      width: 65%;
      background: linear-gradient(135deg, #3a4d6e, #1f2d40);
      color: #e4e7eb;

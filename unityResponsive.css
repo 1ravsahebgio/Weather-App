@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------
-                            ⁡⁣⁢⁣​‌‌‍𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝘃​⁡
+                         ​‌‌‌⁡⁣⁢⁣𝗨𝗻𝗶𝘁𝘆⁡​  ​‌‌‌⁡⁣⁢⁣‍𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝘃⁡​
 --------------------------------------------------------------- */
 
 /* Mobile (max-width 1000x) */
@@ -29,15 +29,14 @@
     padding: 0.8rem;
   }
 
+  /* Lower Div = Div active transfor set  */
+  #lowerDiv div:active {
+    transform: scale(1.1);
+  }
+
   /* Container - Left margin Set  */
   #container-left {
     margin: 0%;
-  }
-
-  /* Temprature - Section tempDegree & defaultCity padding set  */
-  #temprature .first1 #tempDegree,
-  #temprature .first1 #defaultCity {
-    padding-left: 0rem;
   }
 
   /* input-row margin set  */
@@ -48,26 +47,20 @@
 
   /* input-row = input  */
   #input-row input {
-    font-size: 1rem;
+    font-size: .95rem;
     padding-left: 0.938rem;
   }
 
   /* Second - Container flex wrap set  */
   #second-container {
     flex-wrap: wrap;
-    row-gap: 1.2rem;
+    row-gap: clamp(17px, 2.6vh, 20.4px);
   }
 
   /* Second - Container Main Sectoin  */
   #main-section {
-    margin-top: 0.625rem;
-    gap: 1rem;
-  }
-
-  /* Main Sectoin first1  */
-  #main-section .first1 {
-    width: 80%;
-    padding-left: 0.938rem;
+    margin-top: clamp(.6rem, 1.5vh, 11px);
+    gap: clamp(14px, 2.15vh, 17px);
   }
 
   /* TempDegree margin set  */
@@ -82,14 +75,8 @@
 
   /* Temp Content img widht & height set  */
   #temprature #tempContent img {
-    width: clamp(5.625rem, 5.625rem + (100vw - 900px) * 0.044, 6.4rem);
-    height: clamp(5.625rem, 5.625rem + (100vw - 900px) * 0.044, 6.4rem);
-  }
-
-  /* ⁡⁣⁢⁣​‌‍‌𝗥𝗶𝗴𝗵𝘁 𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗗𝗮𝘁𝗮​⁡ */
-  /* Container - Right Show Weekly forecast padding set  */
-  #container-right #weekly-forecast #showWeeklyFor {
-    padding-top: 1.2rem;
+    width: clamp(5.625rem, calc(5.625rem + (100vw - 900px) * 0.044), 6.4rem);
+    height: clamp(5.625rem, calc(5.625rem + (100vw - 900px) * 0.044), 6.4rem);
   }
 
   /* Umbrella Imge = div display none-set */
@@ -97,103 +84,77 @@
     display: none;
   }
 
-  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* ------------------------------------------------------- ⁡⁣⁣⁢​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​⁡ ------------------------------------------------------- */
 
-  /* ------------------------------------------------------------------------- 
-                                  ⁡⁣⁣⁢​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​⁡
-  -------------------------------------------------------------------------  */
-  /* ------------------------------------------------------------------------- 
-                             ​‌‍‌⁡⁣⁢⁣𝗧𝗲𝗺𝗽𝗿𝗮𝘁𝘂𝗿𝗲 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
-  -------------------------------------------------------------------------  */
-
-  #temprature .first1 {
-    padding-left: 5%;
-  }
+  /* ------------------------------------------------------- ​‌‍‌⁡⁣⁢⁣𝗧𝗲𝗺𝗽𝗿𝗮𝘁𝘂𝗿𝗲 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​ ------------------------------------------------------- */
 
   /* for Index.html and features.html  */
-  #temprature .first1 {
-    margin-top: -0.3rem;
-    gap: 2.3rem;
+  #second-container #temprature .first1 {
+    width: 78%;
+    margin-top: -0.4rem;
+    padding-left: 6%;
+    gap: clamp(1.8rem, 4.5vh, 2rem);
   }
 
-  /* TempDegree margin set  */
-  .index #temprature #tempDegree {
-    margin-top: -1.1rem;
+  /* Temprature - Section tempDegree & defaultCity padding set  */
+  #temprature .first1 #tempDegree,
+  #temprature .first1 #defaultCity {
+    padding-left: 0rem;
   }
 
-  /* ------------------------------------------------------------------------- 
-                                  ⁡⁣⁢⁣​‌‍‌𝗔𝗱𝘃𝗶𝘀𝗼𝗿𝘆 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡
-  -------------------------------------------------------------------------  */
+  /* ------------------------------------------------------- ⁡⁣⁢⁣​‌‍‌𝗔𝗱𝘃𝗶𝘀𝗼𝗿𝘆 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡ ------------------------------------------------------- */
   #advisory-section {
-    padding: 1.1rem 0px;
+    padding: clamp(14.5px, 2.45vh, 1.1rem) 0;
   }
 
-  /* Wrapper condition data */
+  /* condition data */
   #advisory-section .conditionsData {
-    flex-direction: column;
-    gap: max(0.6rem,
-        calc(0.7rem - (max(0px, 100vw - 600px) * 1)));
+    width: clamp(90.6%, calc(90.6% + (100vw - 600px) * 10), 92%);
+    gap: max(0.6rem, calc(0.7rem - (max(0px, 100vw - 600px) * 1)));
   }
 
   /* CondictionData data-index */
   .parent-container #advisory-section .conditionsData .data-index {
     width: 100%;
-    padding: 0.7rem 0px 0.7rem .25rem;
-    border-radius: 0.8rem;
-  }
-
-  /* ---------------------------
-   ICON DESIGN 
----------------------------- */
-  #advisory-section .conditionsData .solid-icons {
-    padding: 1.2rem 0.8rem;
+    gap: clamp(.9rem, 3vw, 20px);
+    padding: .7rem 0rem;
   }
 
   /* solid-icon i  */
   #advisory-section .conditionsData .solid-icons i {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     height: 1.5rem;
   }
 
-  /* ---------------------------
-   CARD STYLES
----------------------------- */
   #advisory-section .card-desing {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+    gap: clamp(5.5px, .85vh, 6.7px);
   }
 
-  /* ---------------------------
-   TEXT STYLES
----------------------------- */
   /* Card title  */
   #advisory-section .card-title {
-    font-size: .85rem;
+    font-size: clamp(.8rem, 1.9vh, .83rem);
   }
 
   /* Card main value  */
   #advisory-section .card-value {
-    font-size: 1.04rem;
+    font-size: clamp(1rem, 2.35vh, .95rem);
   }
 
   /* Card sub  */
   #advisory-section .card-sub {
     margin-top: -5px;
-    color: #d4d7ff;
+    color: #e9ebff;
   }
 
-  /* ------------------------------------------------------------------------- 
-                                  ​‌‍‌‍⁡⁣⁢⁣𝗔𝗶𝗿 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
-  -------------------------------------------------------------------------  */
+  /* ------------------------------------------------------- ​‌‍‌‍⁡⁣⁢⁣𝗔𝗶𝗿 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻 - 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​ ------------------------------------------------------- */
   /* Air - Condition condition data  */
-  #advisory-section .conditionsData {
-    width: clamp(90%, 90% + (100vw - 600px) * 10, 92%);
-  }
-
   #air-condition .conditionsData {
     justify-content: space-between;
     padding-left: .1rem;
+  }
+
+  #air-condition #airCon {
+    margin-top: 0px;
   }
 
   /* ConditoinData data-index width set  */
@@ -202,68 +163,47 @@
   }
 
   /* data-index h1 font size set  */
-  .conditionsData .data-index h1 {
-    font-size: 1.4rem;
-    margin-top: 0.2rem;
+  #air-condition .conditionsData h2 {
+    font-size: 1.39rem;
+    margin-top: .27rem;
   }
 
-  /* rain chance & uv index padding set  */
-  #rainChance,
-  #uvIndex {
-    padding-top: 1.875rem;
+  /* rain chance & uv index gap set  */
+  #air-condition .conditionsData {
+    row-gap: clamp(1.45rem, 3.9vh, 1.7rem);
+    column-gap: 0rem;
   }
 
-  /* padd-left = padding - left set */
-  .padd-left {
-    padding-left: 0rem;
+  /* ------------------------------------------------------- ​‌‍‌⁡⁣⁢⁣𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​ ------------------------------------------------------- */
+  .parent-container #container-right {
+    gap: clamp(18px, 3.1vh, 23px);
   }
 
-  /* ------------------------------------------------------------------------- 
-                                   ​‌‍‌⁡⁣⁢⁣𝗙𝗼𝗿𝗲𝗰𝗮𝘀𝘁 𝗦𝗲𝗰𝘁𝗶𝗼𝗻⁡​
-  -------------------------------------------------------------------------  */
   /* Forecast - Section gap & margin set  */
   .index #forecast {
-    gap: 1rem;
-    width: 100%;
-    padding-top: .6rem;
-  }
-
-  #showForecast .wrapper {
-    width: 25%;
-    border-radius: 0.625rem;
+    gap: clamp(12px, 1.7vh, 16px);
+    padding-top: clamp(5px, 1.1vh, 8px);
   }
 
   /* Hover – wrapper dark mode feel */
   .index .wrapper:hover {
-    transform: translateY(-1px) scale(1.015);
-  }
-
-  /* Braker height set */
-  .braker {
-    height: 5px;
+    transform: translateY(-.7px) scale(1.013);
   }
 
   /* Show weekly forecast section gap set  */
-  .index #container-right #showWeeklyFor {
-    gap: .6rem;
+  #container-right #weekly-forecast #showWeeklyFor {
+    width: clamp(50%, calc(85% - (100vw * 0.04)), 80%);
+    gap: clamp(6px, 1.3vh, 9.6px);
+    padding-top: clamp(14px, 2.3vh, 16px);
   }
 
-  /* ------------------------------------------------------------------------- 
-                                ⁡⁢⁣⁣​‌‌‌𝗘​‌‌‌𝗡𝗗​ ​‌‌‌‍𝗜𝗡𝗗𝗘𝗫​ ⁡
-  -------------------------------------------------------------------------  */
+  /* ------------------------------------------------------- ⁡⁢⁣⁣​‌‌‌𝗘𝗻𝗱 𝗜𝗻𝗱𝗲𝘅​⁡ ------------------------------------------------------- */
 
+  /* ------------------------------------------------------- ⁡⁣⁣⁢​‌‌‌𝗙𝗲𝗮𝘁𝘂𝗿𝗲​⁡ ------------------------------------------------------- */
 
-  /* ------------------------------------------------------------------------- 
-                                  ​‌‌‌⁡⁣⁣⁢𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀⁡​
-  -------------------------------------------------------------------------  */
-  /* Features Page  */
-  .responsive-feature {
-    min-height: 100vh;
-  }
 
   /* Features  Weather Metric Sectoin gap & padding set  */
   #weatherMetrics {
-    gap: 0.4rem;
     padding-top: 1rem;
   }
 
@@ -271,25 +211,22 @@
   .metricCard {
     width: 48.5%;
     padding: 1.1rem 0rem 1.1rem 0.5rem;
+    margin-top: 2px;
   }
 
   /* Metric-Card Metric-Info P font size set  */
   .metricInfo p {
-    font-size: 0.9rem;
+    font-size: clamp(.83rem, 2.1vh, .9rem);
   }
 
   /* Metric Card h3 font size set  */
   .metricCard h3 {
-    font-size: 1.1rem;
+    font-size: clamp(.95rem, 2.6vh, 1.1rem);
   }
 
-  /* ------------------------------------------------------------------------- 
-                              ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀⁡​
-  -------------------------------------------------------------------------  */
+  /* ------------------------------------------------------- ​‌‌‌⁡⁢⁣⁣𝗘𝗻𝗱 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀⁡​ ------------------------------------------------------- */
 
-  /* ------------------------------------------------------------------------- 
-                                ​‌‌‌⁡⁣⁣⁢𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆⁡​
-  -------------------------------------------------------------------------  */
+  /* ------------------------------------------------------- ​‌‌‌⁡⁣⁣⁢𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆⁡​ ------------------------------------------------------- */
   /* ⁡⁢⁢⁢𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻 𝗙𝗼𝗿 𝗦𝗺𝗮𝗹𝗹-𝗦𝗰𝗿𝗲𝗲𝗻⁡  */
   @keyframes slideRightShrink {
     0% {
@@ -318,6 +255,12 @@
     padding-bottom: 5rem;
   }
 
+  /* City Card  */
+  #listCity .city-card {
+    padding: clamp(.8rem, calc(.8rem + (100vw - 500px) * 0.012), 1rem) 1.5rem;
+    padding-right: 2rem;
+  }
+
   /* City-wraper city left  */
   .city-wrapper .city-left {
     transition: all 0.7s ease;
@@ -328,12 +271,9 @@
     height: 92vh;
   }
 
-  /* ------------------------------------------------------------------------- 
-                             ⁡⁢⁣⁣​‌‌‌𝗘𝗻𝗱 𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆​⁡ 
+  /* ------------------------------------------------------- ⁡⁢⁣⁣​‌‌‌𝗘𝗻𝗱 𝗦𝘁𝗼𝗿𝗲 𝗖𝗶𝘁𝘆​⁡ -------------------------------------------------------*/
  
-  /* ------------------------------------------------------------------------- 
-                                 ⁡⁣⁣⁢​‌‌‌ 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽​⁡
-  -------------------------------------------------------------------------  */
+  /* -------------------------------------------------------⁣⁢​‌‌‌ ⁡⁣⁣⁢𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽​⁡ ------------------------------------------------------- */
   /* Parent Container world Map height set  */
   .world-map #worldMap {
     height: 70vh;
@@ -348,7 +288,5 @@
     justify-content: center;
   }
 
-  /* ------------------------------------------------------------------------- 
-                           ​‌‌‌⁡⁢⁣⁣ 𝗘𝗻𝗱 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽⁡​
-  -------------------------------------------------------------------------  */
+  /* ------------------------------------------------------- ​‌‌‌‍⁡⁢⁣⁣𝗘𝗻𝗱 𝗪𝗼𝗿𝗹𝗱 𝗠𝗮𝗽⁡⁡​ ------------------------------------------------------- */
 }

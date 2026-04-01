@@ -4,13 +4,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", "Inter", "Nunito Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
 }
 
 /* html Body - Section */
 html,
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: rgb(9, 9, 9);
   height: 100%;
   width: 100%;
@@ -89,7 +91,6 @@ body,
   width: 6.5%;
 }
 
-
 /* First container column - section  */
 #column-section {
   height: 100%;
@@ -167,7 +168,7 @@ body,
 #input-row input {
   width: 94%;
   height: 2.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   padding-left: 0.625rem;
   color: white;
   border: none;
@@ -191,7 +192,6 @@ input:focus-visible {
 
 /* Input row  Search button  */
 #input-row #search {
-  /* width: 6%; */
   width: clamp(0px, 12%, 55px);
   height: 2.5rem;
   border-top-right-radius: 0.75rem;
@@ -233,6 +233,7 @@ input:focus-visible {
 
 #temprature {
   position: relative;
+  overflow: hidden;
   user-select: none;
 }
 
@@ -245,7 +246,7 @@ input:focus-visible {
 
 /* Temprature Section */
 #temprature .first1 {
-  gap: 1.7rem;
+  gap: 1rem;
   width: 60%;
   height: 100%;
 }
@@ -260,9 +261,8 @@ input:focus-visible {
 /* Temprature default city and temp degree  */
 #defaultCity #DefaultCityName,
 #tempDegree {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-weight: bolder;
-  margin-bottom: 0.5rem;
   color: rgb(240, 240, 240);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
@@ -270,12 +270,12 @@ input:focus-visible {
 /* Temrature Degree Height & Temprature Degree font size & style color  */
 #temprature #tempDegree {
   height: 3.125rem;
-  font-size: 2.45rem;
+  font-size: 2.24rem;
 }
 
 /* Chance of rain font size & color  */
 #temprature #defaultCity #cRain {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -286,8 +286,8 @@ input:focus-visible {
 
 /* Temprature Image  */
 #temprature #tempContent img {
-  height: 7rem;
-  width: 7rem;
+  height: 6.2rem;
+  width: 6.2rem;
 }
 
 /* ⁡⁣⁢⁢Animation⁡ */
@@ -307,14 +307,9 @@ input:focus-visible {
   content: "";
   position: absolute;
   width: 3px;
-  /* ⭐ chota size */
   height: 3px;
-
   background: #ffffffcc;
-  /* normal white star */
   border-radius: 50%;
-
-  /* very light twinkle (no heavy glow) */
   animation: tinyTwinkle 1.6s infinite alternate ease-in-out;
   opacity: 0.7;
   pointer-events: none;
@@ -371,7 +366,6 @@ input:focus-visible {
     filter: drop-shadow(0 0 8px #8fa8ff);
   }
 }
-
 
 /*  /* SUNNY MODE — container breathes (smooth scale) */
 #tempContent.sunny {
@@ -459,6 +453,7 @@ input:focus-visible {
 #forecast #showForecast p {
   color: #b2b8c1;
   opacity: 0.9;
+  word-spacing: -.7px;
 }
 
 /* Show Forecast  */
@@ -490,7 +485,7 @@ input:focus-visible {
 /* Weekly forecast & Today For Headding  */
 #container-right #wf-heading,
 #forecast #today-for {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   width: 90%;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.130);
@@ -515,13 +510,13 @@ input:focus-visible {
 /* Imges & Span */
 #showWeeklyFor .imgSpan {
   width: 45%;
-  width: min(45%,280px);
+  width: min(45%, 280px);
   justify-content: space-around;
 }
 
 /* Styling forecard */
 .foreCard {
-  font-size: 0.8rem;
+  font-size: 0.83rem;
   font-weight: 600;
 }
 
@@ -533,7 +528,7 @@ input:focus-visible {
 
 /* Minimum Temp & Maximum Temp  */
 #showWeeklyFor .minMax {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 /* / Slash margin set */
@@ -555,5 +550,3 @@ input:focus-visible {
 #showWeeklyFor>.bottomB:last-of-type {
   display: none;
 }
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */

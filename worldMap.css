@@ -28,8 +28,7 @@
 
 /* Leaflet container */
 .leaflet-container {
-  background: #ffffff;
-  font-family: "Poppins", "Inter", "Nunito Sans", sans-serif;
+  background: #ffffff; 
 }
 
 /* Popup Styling */
@@ -46,7 +45,7 @@
 
 .leaflet-popup-content {
   margin: 0.75rem 0.938rem;
-  font-size: 0.9rem;
+  font-size: .86rem;
   line-height: 1.4;
 }
 
@@ -62,7 +61,7 @@
   align-items: center;
   color: white;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: .78rem;
   box-shadow: 0 0.125rem 0.625rem rgba(68, 163, 255, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -82,25 +81,25 @@
 .weather-popup h3 {
   color: #f0f1f1;
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .weather-popup .temp {
   color: #44a3ff;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 0.312rem 0;
 }
 
 .weather-popup .condition {
   color: #9399a2;
-  font-size: 0.9rem;
+  font-size: .87rem;
   margin: 0.312rem 0;
 }
 
 .weather-popup .time {
   color: #c4cad3;
-  font-size: 0.8rem;
+  font-size: .8rem;
   margin-top: 0.312rem;
 }
 
@@ -147,15 +146,15 @@
 }
 
 .city-info h3 {
-  font-size: 1.062rem;
+  font-size: 1.1rem;
 }
 
 .city-info p {
-  font-size: 0.875rem;
+  font-size: .85rem;
 }
 
 .city-temp {
-  font-size: 1.475rem;
+  font-size: 1.3rem;
 }
 
 .remove-btn {

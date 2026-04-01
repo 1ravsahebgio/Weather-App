@@ -1,5 +1,53 @@
-@media (min-width: 1000px) {
-    .parent-container{
-        width: 100%;
-    }
-}
+ @media (min-width: 1000px) and (max-height:550px) {
+     html {
+         font-size: 15.6px;
+     }
+
+     #container-left #main-section {
+         overflow-y: auto;
+         scrollbar-width: none;
+         height: 100%;
+         gap: .5rem;
+         margin-top: .5rem;
+     }
+
+     #main-section .mainContent {
+         min-height: 160px;
+     }
+
+     #main-section #advisory-section {
+         min-height: 175px;
+     }
+
+     #air-condition {
+         margin-bottom: .7rem;
+     }
+
+     /* ----------------- ⁡⁣⁢⁣​‌‍‌𝗔𝗱𝘃𝗶𝘀𝗼𝗿𝘆 𝗦𝗲𝗰𝘁𝗶𝗼𝗻​⁡ ----------------- */
+
+     #advisory-section .conditionsData { 
+         padding: .2rem 0; 
+     }
+
+     /* Condiction-data data-index  */
+     #advisory-section .conditionsData .data-index {
+         gap: .70rem;
+         width: 48% !important;
+     }
+
+     #advisory-section .data-index .solid-icons {
+         width: 25% !important;
+     }
+
+ }
+
+ @media (min-width: 1000px) and (max-width: 1200px) {
+     .parent-container {
+         width: 100%;
+         gap: 5px;
+     }
+
+     #first-container {
+         width: 83px;
+     }
+ }

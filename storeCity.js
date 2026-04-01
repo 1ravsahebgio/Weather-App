@@ -132,8 +132,6 @@ home.addEventListener("click", function () {
 function limitString(str, num) {
   return str.length > num ? str.slice(0, num) + "..." : str;
 }
-  
-
 
 // 🌆 City card UI creator
 function addCityCard(name, time, temp, icon) {
